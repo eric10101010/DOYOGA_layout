@@ -1,0 +1,122 @@
+.course{
+    &Info{
+        width: 920px;
+        margin-bottom: 64px;
+        h2{
+            font-size: $text-2xl;
+        }
+        &Box {
+            display: flex;
+            justify-content: space-between;
+        }
+        &Img{
+
+           img{
+               width: 540px;
+               height: 341px;
+               object-fit: cover;
+               border-radius: 16px;
+           }
+        }
+    }
+    &Search{
+        padding: 20px 0;
+        background-color: #C0A4A5;
+    }
+}
+.courseMainbar{
+    margin-top: 54px;
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: space-between;
+    &Img{
+        width: 74%;
+    }
+    &Box{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+    }
+    &Item {
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 24px;
+        border-radius: 16px;
+        position: relative;
+        h4{
+            font-size: $text-2l;
+            font-weight: bold;
+        }
+        span{
+            position: absolute;
+            top: -15px;
+            left: 24px;
+        }
+    }
+    &Text{
+        width: 23%;
+        font-size: $text-base;
+    }
+}
+.courseMainbarItemOne, .courseMainbarItemTwo, .courseMainbarItemThree, .courseMainbarItemFour{
+    width: 445px;
+    height: 196px;
+    background-size: cover;
+}
+.courseMainbarItemOne{
+    background:url(../images/course-1.jpg) no-repeat 50% 70%;
+    background-size: cover;
+}
+.courseMainbarItemTwo{
+    background:url(../images/case-1.jpg) no-repeat 50% 70%;
+    background-size: cover;
+}
+.courseMainbarItemThree{
+    background:url(../images/course-4.jpg) no-repeat 50% 70%;
+    background-size: cover;
+}
+.courseMainbarItemFour{
+    background:url(../images/space-1.jpg) no-repeat 50% 70%;
+    background-size: cover;
+}
+.courseMainbarCardOne, .courseMainbarCardTwo, .courseMainbarCardThree, .courseMainbarCardFour{
+    width: 350px;
+    height: 196px;
+}
+ .courseMainbarCardOne{
+    background:url(../images/course-2.jpg) no-repeat 50% 70%;
+    background-size: cover;
+}
+.courseMainbarCardTwo{
+    background:url(../images/course-3.jpg) no-repeat 50% 70%;
+    background-size: cover;
+}
+.courseMainbarCardThree{
+    background:url(../images/course-5.jpg) no-repeat 50% 70%;
+    background-size: cover;
+}
+.courseMainbarCardFour{
+    background:url(../images/course-6.jpg) no-repeat 50% 70%;
+    background-size: cover;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px !important; 
+  }
+  
+  .card-img-top {
+    height: 350px;
+    object-fit: cover;
+  }

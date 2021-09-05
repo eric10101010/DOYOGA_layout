@@ -1,0 +1,352 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<main>
+  <!-- banner -->
+  <div class="indexBanner">
+    <div class="indexBannerBox container d-flex align-items-center justify-content-between">
+      <div class="indexBannerText ps-lg-7 ms-lg-7 w-md-50 w-lg-5/12">
+        <h3>健身輕時尚</h3>
+        <h2>DOYOGA，做你的瑜珈</h2>
+        <span>多給自己一點時間享受靜謐，傾聽內心的<br>聲音。</span>
+        <div class="indexBannerBtn mt-3">
+          <a href="./booking.html" class="btn me-2 bg-primary py-2 px-3">立即預約</a>
+          <a href="./course.html" class="btn bg-secondary py-2 px-3">課程介紹</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- feature -->
+  <section class="indexFunction pt-5 pt-lg-7 pb-7 pb-lg-8">
+    <div class="functionBox container p-0">
+      <div class="functionTitle border">
+        <h3 class="text-center mb-1">感受身心，活在當下</h3>
+        <h4 class="text-center mb-4">DOYOGA 可以帶給你...</h4>
+      </div>
+      <div class="d-flex justify-content-between border">
+        <div class="functionItem functionCardOne col-lg-4 col-md-4 col-12">
+          <h4>整體健身</h4>
+          <p>每一個動作，都融入運動解剖學的的觀點強調以身體的中心線為出發點。</p>
+        </div>
+        <div class="functionItem functionCardTwo col-lg-4 col-md-4 col-12">
+          <h4>減壓放鬆</h4>
+          <p>調節全身系統、改善血液循環、減壓養心、釋放身心，達到修心養性的目的。</p>
+        </div>
+        <div class="functionItem functionCardThree col-lg-4 col-md-4 col-12">
+          <h4>局部雕塑</h4>
+          <p>幫助強化背部與腹部的核心肌群，增進我們身體穩定度以及保持良好體態。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- teacher -->
+  <section class="indexTeacher py-4 py-lg-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-none d-lg-block">
+          <div class="teacherImg bg-fluid h-100"></div>
+        </div>
+        <ul class="col-lg-6 d-flex flex-column align-items-center">
+          <div class="teacherTitle">
+            <h4 class="text-left">頂尖師資、專業教學</h4>
+            <p class="mb-4">強力師資，經歷豐富，協會認證。運用引導式教學，針對不同需求的人制定專屬課程。</p>
+          </div>
+          <div class="teacherTop d-flex">
+            <img src="./assets/images/teacher-1.png" alt="teach_image">
+            <div class="teacher-content">
+              <h4>Carol Tang 老師</h4>
+              <p>教學經歷 10 年</p>
+              <p>瑜珈讓我重新認識自己的身體，也讓我有了不一樣的人生。</p>
+            </div>
+          </div>
+          <ul class="teacherBox w-100">
+            <li class="teacherItem d-flex">
+              <img src="./assets/images/teacher-2.png" alt="teach_image" class="me-3 w-12x w-md-auto">
+              <div class="teacher-content">
+                <h4 class="fs-5 fw-normal mb-1">Kanae 老師</h4>
+                <p class="mb-1">教學經歷 10 年</p>
+              </div>
+            </li>
+            <li class="teacherItem d-flex">
+              <img src="./assets/images/teacher-3.png" alt="teach_image" class="me-3 w-12x w-md-auto">
+              <div class="teacher-content">
+                <h4 class="fs-5 fw-normal mb-1">Asa Ifrit 老師</h4>
+                <p class="mb-1">教學經歷 10 年</p>
+              </div>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- space -->
+  <section class="indexSpace">
+    <div class="container">
+      <div class="row border">
+        <div class="col-6 d-flex justify-content-between border">
+          <div class="spaceImgBoxOne"><img src="./assets/images/space-1.jpg" alt=""></div>
+          <div class="spaceImgBoxTwo d-flex flex-column">
+            <img src="./assets/images/space-2.jpg" alt="">
+            <img src="./assets/images/space-3.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-6">
+          <h3>舒適空間、靜心放鬆</h3>
+          <p>我們都渴望平靜安穩的生活，擁有一處能夠靜心的角落，安撫每天繁雜忙碌的心。</p>
+          <a href="#">
+            <span>環境介紹</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- course -->
+  <section class="indexCourse">  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6 col-lg-5 offset-lg-1 mb-6 mb-md-0">
+        <h2 class="text-secondary fw-normal mb-1">精心設計、課程多元</h2>
+        <p class="text-primary fs-4 mb-8">教師帶領多元課程，釋放壓力，與身心常見的緊繃不適溫柔和解。</p>
+        <a href="course.html" class="text-secondary hvr-icon-forward d-block mb-6 mb-md-0">課程介紹<i
+            class="fas fa-long-arrow-alt-right hvr-icon ms-3"></i></a>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="swiper-container courseSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ratio ratio-1x1">
+              <img class="rounded-3"
+                src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20doing%20yoga%20beside%20wall.jpg?raw=true"
+                alt="photo"></div>
+            <div class="swiper-slide ratio ratio-1x1">
+              <img class="rounded-3"
+                src="https://images.unsplash.com/photo-1574454941059-9408c4d3f268?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                alt="photo">
+            </div>
+            <div class="swiper-slide ratio ratio-1x1">
+              <img class="rounded-3"
+                src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20black%20sports%20bra%20and%20black%20leggings%20doing%20yoga.jpg?raw=true"
+                alt="photo">
+            </div>
+            <div class="swiper-slide ratio ratio-1x1">
+              <img class="rounded-3 w-100"
+                src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true"
+                alt="photo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- case -->
+  <section class="indexCase pt-5 pt-md-40 pb-7">
+    <div class="container">
+      <div class="caseTitle">
+        <h4>方案選擇</h4>
+        <p>DOYOGA 可以帶給你...</p>
+      </div>
+      <ul class="row">
+        <li class="caseItem col-lg-4 col-12">
+          <img src="./assets/images/case-1.jpg" alt="">
+          <div class="caseText">
+            <h4>首次體驗</h4>
+            <h5>NT $450 / 次/p>
+            <p>分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案</p>
+            <a href="#">
+              <span>選擇課程</span>
+            </a>
+          </div>
+        </li>
+        <li class="caseItem col-lg-4 col-12">
+          <img src="./assets/images/case-2.jpg" alt="">
+          <div class="caseText">
+            <h4>首次體驗</h4>
+            <h5>NT $450 / 次/p>
+            <p>分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案</p>
+            <a href="#">
+              <span>選擇課程</span>
+            </a>
+          </div>
+        </li>
+        <li class="caseItem col-lg-4 col-12">
+          <img src="./assets/images/case-3.jpg" alt="">
+          <div class="caseText">
+            <h4>首次體驗</h4>
+            <h5>NT $450 / 次/p>
+            <p>分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案</p>
+            <a href="#">
+              <span>選擇課程</span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- user -->
+  <section class="indexUser">
+    <div class="container">
+      <h3 class="text-center">聽聽他們怎麼說</h3>
+      <ul class="row d-flex flex-wrap border">
+        <li class="userItem col-4">
+          <div class="userCard bg-white">
+            <div class="userImg"><img src="./assets/images/user-1.png" alt=""></div>
+            <div class="userText">
+              <h4>Joanne<span class="ps-1">Oct 17 2020</span></h4>
+              <div class="icobBox">
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+              </div>
+              <p>服務很好、設備優良！</p>
+            </div>
+          </div>
+        </li>
+        <li class="userItem col-4">
+          <div class="userCard mx-0 bg-white">
+            <div class="userImg"><img src="./assets/images/user-2.png" alt=""></div>
+            <div class="userText">
+              <h4>穎旻<span class="ps-1">Oct 17 2020</span></h4>
+              <div class="icobBox">
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+              </div>
+              <p>上課後身體健康很多</p>
+            </div>
+          </div>
+        </li>
+        <li class="userItem col-4">
+          <div class="userCard mx-0 bg-white">
+            <div class="userImg"><img src="./assets/images/user-3.png" alt=""></div>
+            <div class="userText">
+              <h4>子琪<span class="ps-1">Oct 17 2020</span></h4>
+              <div class="icobBox">
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+              </div>
+              <p>上課很有趣！</p>
+            </div>
+          </div>
+        </li>
+        <li class="userItem col-4">
+          <div class="userCard mx-0 bg-white">
+            <div class="userImg"><img src="./assets/images/user-4.png" alt=""></div>
+            <div class="userText">
+              <h4>葉子<span class="ps-1">Oct 17 2020</span></h4>
+              <div class="iconbBox">
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+              </div>
+              <p>老師的教學很專業</p>
+            </div>
+          </div>
+        </li>
+        <li class="userItem col-4">
+          <div class="userCard mx-0 bg-white">     
+            <div class="userImg"><img src="./assets/images/user-5.png" alt=""></div>
+            <div class="userText">
+              <h4>Ray<span class="ps-1">Oct 17 2020</span></h4>
+              <div class="icobBox">
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+              </div>
+              <p>很舒壓</p>
+            </div>
+          </div>
+        </li>
+        <li class="userItem col-4">
+          <div class="userCard mx-0 bg-white">
+            <div class="userImg"><img src="./assets/images/user-6.png" alt=""></div>
+            <div class="userText">
+              <h4>俊儀<span class="ps-1">Oct 17 2020</span></h4>
+              <div class="icobBox">
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+                <span class="material-icons-outlined">
+                  star
+                </span>
+              </div>
+              <p>很讚</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>

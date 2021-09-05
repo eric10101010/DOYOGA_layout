@@ -1,0 +1,61 @@
+.appointment{
+    &Item{
+        &Img{
+            img{
+                width: 100%;
+                height: 227px;
+                object-fit: cover;
+            }
+        }
+        &Content{
+            font-size: $text-xl;
+        }
+    }
+    &Card{
+        border: 4px solid #C0A4A5;
+        border-radius: $text-base;
+    }
+    &Rules{
+        font-size: $text-xl;
+    }
+}
+
+.appointmentForm{
+    font-size: $text-base;
+    color: #707070;
+    &Title{
+        h3{
+            font-size: $text-m;
+            color: #C0A4A5;
+        }
+    }
+    &Table{
+        width: 300px;
+        margin-top: 32px;
+        margin-bottom: 104px;
+        span{
+            font-size: $text-s;
+        }
+        &Question{
+            margin-right: 32px;
+        }
+    }
+}
+.formDate{
+    width: 118px;
+}
+
+.appointmentDone{
+    font-size: $text-base;
+    &Info{
+        width: 540px;
+    }
+    &NoticeContent{
+        font-size: $text-base;
+        color: #907A7B;
+        width: 350px;
+        a{
+            margin-top: 32px;
+        }
+    }
+}
