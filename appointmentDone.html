@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%- title %></title>
+  <title>DOYOGA</title>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons&style=outlined" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
@@ -46,7 +46,58 @@
     </div>
   </header>
 
-  <%- contents %>
+  <main class="">
+  <div class="container text-primary">
+    <h3 class="h3 text-center fw-normal mb-4 mb-md-3">立即預約</h3>
+
+    <ul class="d-flex justify-content-center mb-5">
+      <li class="rounded-2xl bg-warning py-2.5 px-3.5 px-lg-7 me-3 me-md-5">選擇方案</li>
+      <li class="rounded-2xl bg-warning py-2.5 px-3.5 px-lg-7 me-3 me-md-5">填寫資料</li>
+      <li class="rounded-2xl text-white bg-primary py-2.5 px-3.5 px-lg-7">完成預約</li>
+    </ul>
+    <section class="appointmentDone">
+      <div class="appointmentDoneBox d-flex flex-column align-items-center border">
+        <div class="appointmentDoneInfo d-flex flex-column align-items-center">
+          <i class="far fa-check-circle fa-3x mb-3.5"></i>
+          <p class="fs-5 mb-5">已完成預約，以下是您的預約資訊:</p>
+          <div class="accordion w-100 w-md-75 w-lg-50 mb-4" id="finishContent">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  預約資訊
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#finishCotent">
+                <div>
+                  <ul>
+                    <li>您預約的是<span class="fs-5 text-secondary ms-2">首次體驗課程-基礎</span></li>
+                    <li>上課預約報到日：2021/07/21</li>
+                    <li>預約人：Joanne Chen</li>
+                    <li>年齡：18 歲</li>
+                    <li>性別：女</li>
+                    <li>電子信箱：example123@gmail.com</li>
+                    <li>手機號碼：0912-345-678</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appointmentDoneNotice">         
+          <h3 class="text-center">上課注意事項</h3>
+          <div class="appointmentDoneNoticeContent mt-2">    
+              <p>第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。</p>
+              <p>如欲更改體驗時間請提前通知我們喔！</p>
+              <a href="./index.html" class="btn btn-secondary text-white d-block">返回首頁</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
 
   <footer>
     <div class="footer">

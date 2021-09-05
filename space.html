@@ -1,10 +1,52 @@
----
-title: 瑜珈空間
-layout: ./app/layout.ejs
-engine: ejs
-current: schedule
----
-<main>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>瑜珈空間</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons&style=outlined" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <ul class="sns d-none d-lg-block me-4 position-fixed top-50 end-0 translate-middle-y text-center lh-sm">
+    <li><a href="#" class="d-block fs-1"><i class="fab fa-facebook"></i></a></li>
+    <li><a href="#" class="d-block fs-1"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="#" class="d-block fs-1"><i class="fab fa-line"></i></a></li>
+  </ul>
+  <header>
+    <div class="header d-flex justify-content-center">
+      <div class="headerBox container">
+        <div class="headerLogo">
+          <h1>
+            <a href="index.html" >DOYUGA</a>
+          </h1>
+        </div>
+        <nav>
+          <ul class="headerMenu d-flex">
+            <li class="headerItem"><a href="productOptical.html" class="headerLink">課程介紹</a></li>
+            <li class="headerItem"><a href="contact.html" class="headerLink">瑜珈課程</a></li>
+            <li class="headerItem"><a href="blog.html" class="headerLink">當月課表</a></li>
+          </ul>
+        </nav>
+          <ul class="d-flex">
+            <li class="headerBtn">
+              <a href="./booking.html" class="btn btn-outline-primary me-3">立即預約</a>
+            </li>
+            <li class="headerBtn">
+              <a href="./contact.html" class="btn btn-outline-primary">聯絡我們</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
   <h3 class="fw-medium text-primary text-center mb-4 mb-md-5 mb-lg-6">瑜珈空間</h3>
   <div class="container pb-6 pb-mb-4 pb-lg-6">
     <div class="row">
@@ -184,3 +226,53 @@ current: schedule
 </section>
 
 </main>
+
+  <footer>
+    <div class="footer">
+      <div class="border-bottom border-white">
+        <div
+          class="container py-4 py-md-5 d-flex flex-column flex-lg-row justify-content-between align-items-lg-center">
+          <p class="h3 fw-md-medium">現在訂閱，獲得課程優惠碼！</p>
+          <div class="input-group w-md-5/12 w-lg-87x">
+            <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's username"
+              aria-describedby="button-addon2">
+            <button class="btn btn-secondary text-white" type="button" id="button-addon2">訂閱</button>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-4 pb-5 py-md-5">
+        <div class="d-flex justify-content-between">
+          <h2 class="my-0">
+            <a class="bg-link w-24x h-8x d-block" href="./index.html" style="background-image: url(
+              ./assets/images/DOYOGA.png);"></a>
+          </h2>
+          <ul class="d-flex">
+            <li><a class="me-2" href="#"><img src="./assets/images/icon-fb.svg" alt="icon" width="24"></a></li>
+            <li><a class="me-2" href="#"><img src="./assets/images/icon-ig.svg" alt="icon" width="24"></a></li>
+            <li><a href="#"><img src="./assets/images/icon-line.svg" alt="icon" width="24"></a></li>
+          </ul>
+        </div>
+        <div class="position-md-relative">
+          <ul class="mb-2 mb-md-0">
+            <li class="mb-2">
+              <a class="text-white" href="./course.html">課程介紹</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-white" href="./environment.html">瑜珈空間</a>
+            </li>
+            <li>
+              <a class="text-white" href="./schedule.html">當月課表</a>
+            </li>
+          </ul>
+          <p class="m-0 position-md-absolute bottom-0 start-50 translate-middle-md-x">© 2021. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
