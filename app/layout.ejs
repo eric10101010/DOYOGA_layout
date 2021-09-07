@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons&style=outlined" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css" />
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -21,7 +21,7 @@
   </ul>
   <header>
     <div class="header d-flex justify-content-center">
-      <div class="headerBox container">
+      <div class="headerBox">
         <div class="headerLogo">
           <h1>
             <a href="index.html" >DOYUGA</a>
@@ -29,14 +29,14 @@
         </div>
         <nav>
           <ul class="headerMenu d-flex">
-            <li class="headerItem"><a href="productOptical.html" class="headerLink">課程介紹</a></li>
-            <li class="headerItem"><a href="contact.html" class="headerLink">瑜珈課程</a></li>
-            <li class="headerItem"><a href="blog.html" class="headerLink">當月課表</a></li>
+            <li class="headerItem"><a href="course.html" class="headerLink text-gary">課程介紹</a></li>
+            <li class="headerItem"><a href="space.html" class="headerLink text-gary">瑜珈空間</a></li>
+            <li class="headerItem"><a href="schedule.html" class="headerLink text-gary">當月課表</a></li>
           </ul>
         </nav>
           <ul class="d-flex">
             <li class="headerBtn">
-              <a href="./booking.html" class="btn btn-outline-primary me-3">立即預約</a>
+              <a href="./appointment.html" class="btn btn-outline-primary me-3">立即預約</a>
             </li>
             <li class="headerBtn">
               <a href="./contact.html" class="btn btn-outline-primary">聯絡我們</a>
@@ -49,44 +49,46 @@
   <%- contents %>
 
   <footer>
-    <div class="footer">
-      <div class="border-bottom border-white">
-        <div
-          class="container py-4 py-md-5 d-flex flex-column flex-lg-row justify-content-between align-items-lg-center">
-          <p class="h3 fw-md-medium">現在訂閱，獲得課程優惠碼！</p>
-          <div class="input-group w-md-5/12 w-lg-87x">
+    <div class="footer bg-primary">
+      <div class="footerBox">
+        <div class="footerTop d-flex justify-content-between align-items-center">
+          <h3 class="text-white fw-bolder">現在訂閱，獲得課程優惠碼！</h3>
+          <div class="input-group footerSubscribe">
             <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's username"
               aria-describedby="button-addon2">
             <button class="btn btn-secondary text-white" type="button" id="button-addon2">訂閱</button>
           </div>
         </div>
-      </div>
-      <div class="container pt-4 pb-5 py-md-5">
-        <div class="d-flex justify-content-between">
-          <h2 class="my-0">
-            <a class="bg-link w-24x h-8x d-block" href="./index.html" style="background-image: url(
-              ./assets/images/DOYOGA.png);"></a>
-          </h2>
-          <ul class="d-flex">
-            <li><a class="me-2" href="#"><img src="./assets/images/icon-fb.svg" alt="icon" width="24"></a></li>
-            <li><a class="me-2" href="#"><img src="./assets/images/icon-ig.svg" alt="icon" width="24"></a></li>
-            <li><a href="#"><img src="./assets/images/icon-line.svg" alt="icon" width="24"></a></li>
-          </ul>
-        </div>
-        <div class="position-md-relative">
-          <ul class="mb-2 mb-md-0">
-            <li class="mb-2">
+        <hr class="text-white">
+        <div class="footerBottom d-flex justify-content-between">
+          <ul class="footerCourse">
+            <li>
+              <img src="./assets/images/logo-footer.png" alt="">
+            </li>
+            <li class="my-2">
               <a class="text-white" href="./course.html">課程介紹</a>
             </li>
             <li class="mb-2">
-              <a class="text-white" href="./environment.html">瑜珈空間</a>
-            </li>
-            <li>
-              <a class="text-white" href="./schedule.html">當月課表</a>
+              <a class="text-white" href="./space.html">瑜珈空間</a>
             </li>
           </ul>
-          <p class="m-0 position-md-absolute bottom-0 start-50 translate-middle-md-x">© 2021. All Rights Reserved.</p>
+          <ul class="footerIcon d-flex">
+            <li>
+              <a class="me-2" href="#"><img src="./assets/images/icon-fb.svg" alt="icon" width="24"></a>
+            </li>
+            <li>
+              <a class="me-2" href="#"><img src="./assets/images/icon-ig.svg" alt="icon" width="24"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/images/icon-line.svg" alt="icon" width="24"></a>
+            </li>
+          </ul>
         </div>
+        <li class="footerGroup d-flex justify-content-between">
+          <a class="text-white" href="./schedule.html">當月課表</a>
+          <p class="footerRight text-white">© 2021. All Rights Reserved.</p>
+          <span></span>
+        </li>
       </div>
     </div>
   </footer>

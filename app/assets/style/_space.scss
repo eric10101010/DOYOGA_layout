@@ -1,0 +1,74 @@
+.space{
+    h3{
+        font-size: $text-2l;
+        color: #907A7B;
+        margin-top: 64px;
+        margin-bottom: 32px;
+        font-weight: bold;
+    }
+    &Mainbar{
+        &Content{
+            margin-bottom: $text-l;
+        }
+        &Text{
+            padding: $text-l;
+            color:$white;
+            h4{
+                font-size: $text-2l;
+            }
+        }
+        &Img {
+            border-radius: $text-base;
+            object-fit: cover;
+        }
+    }
+    &Sidebar{
+        &Box{
+            padding: $text-xl;
+            background-color: #F5F0E7;
+            h4{
+                font-size: $text-m;
+                color: #907A7B;
+            }
+            p{
+                color: #907A7B;
+            }
+            a{
+                padding-top: 12px;
+                font-weight: bold;
+                color: #907A7B;
+            }
+        }
+    }
+}
+
+.space{
+    &Recommend{
+        margin-top: 40px;
+        background-color: #F5F0E7;
+        h2{
+            font-size: $text-2l;
+            font-weight: bold;
+            color: #907A7B;
+            padding-top: 40px;
+            padding-bottom: $text-xl;
+        }
+        &Item{
+            margin-bottom: 56px;
+        }
+        &Img{
+            width: 255px;
+            height: 196px;
+            object-fit: cover;
+        }
+        &Text{
+            color: #907A7B;    
+            h4{
+                font-size: $text-m;
+                font-weight: bold;
+                padding-top: 8px;
+            }
+
+        }
+    }
+}

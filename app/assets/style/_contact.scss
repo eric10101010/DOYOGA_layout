@@ -1,17 +1,40 @@
 .contact{
-    h3{
-        font-size: $text-xl;
-    }
-    &Map{
-        iframe{
-            height: 360px;
-        }
-    }
+    margin-top: 64px;
+    margin-bottom: 110px;
     &Info{
         width: 57%;
     }
     &Form{
         width: 40%;
+        padding: 0 32px;
+        border-radius: $text-base;
+        h4{
+            font-size: $text-m;
+        }
+    }
+    &Map{
+        iframe{
+            height: 360px;
+            border-radius: $text-base;
+        }
+    }
+    &Title{
+        font-size: $text-2l;
+        margin-bottom: 32px;
+    }
+    &Text{
+        width: 350px;
+        h3{
+            font-size: $text-l;
+        }
     }
 }
-
+.doneFormDate{
+    width: 128px;
+    border-radius: 4px;
+    padding: 6px 12px;
+    border: none;
+}
+.doneData{
+    width: 171px;
+}

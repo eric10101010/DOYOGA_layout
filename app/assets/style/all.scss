@@ -1,5 +1,8 @@
-@import 'variable';
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 
+@import 'variable';
 @import "reset";
 @import "layout";
 @import "base";
@@ -7,6 +10,7 @@
 @import "index";
 @import "course";
 @import "schedule";
+@import "space";
 
 @import "appointment";
 @import "contact";

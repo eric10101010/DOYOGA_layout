@@ -1,6 +1,40 @@
 .schedule{
+    h2{
+        font-size: $text-3xl;
+        padding-top: 64px;
+        padding-bottom: $text-xl;
+    }
     &Box{
-        width: 920px;
-        margin: 0 auto;
+        padding: 40px 48px;
+        border-radius: $text-base;
+    }
+    &TableTitle{
+        font-size: $text-m;
+    }
+}
+
+.schedule{
+    &Rules{
+        margin-bottom: 104px;
+        h2{
+            color: #707070;
+            font-size: $text-3xl;
+            padding: $text-xl 0;
+        }
+        &Box{
+            padding: 0 95px;
+        }
+        &Item{
+            border-radius: $text-base;
+            span{
+                font-size: $text-3xl;
+                font-family: Han Sans TW;
+                font-weight: bold;
+            }
+        }
+        &Text{
+            padding: $text-base $text-l;
+            border-radius: $text-base;
+        }
     }
 }

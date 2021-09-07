@@ -4,13 +4,15 @@
         margin-bottom: 64px;
         h2{
             font-size: $text-2xl;
+            font-weight: bold;
+            margin-top: 64px;
+            margin-bottom: $text-xl;
         }
         &Box {
             display: flex;
             justify-content: space-between;
         }
         &Img{
-
            img{
                width: 540px;
                height: 341px;
@@ -18,10 +20,29 @@
                border-radius: 16px;
            }
         }
+        &Text{
+            h3{
+                font-size: $text-2l;
+                font-weight: bold;
+                padding-bottom: 3px;
+            }
+            h4{
+                padding-top: 2px;
+            }
+            span{
+                font-size: $text-s;
+            }
+        }
     }
     &Search{
         padding: 20px 0;
-        background-color: #C0A4A5;
+        input{
+            color: red;
+        }
+    }
+    &Tag{
+        padding: 4px 16px;
+        border-radius: $text-base;
     }
 }
 .courseMainbar{
@@ -59,9 +80,12 @@
     }
     &Text{
         width: 23%;
-        font-size: $text-base;
+        h3{
+            font-size: $text-m;
+        }
     }
 }
+
 .courseMainbarItemOne, .courseMainbarItemTwo, .courseMainbarItemThree, .courseMainbarItemFour{
     width: 445px;
     height: 196px;
@@ -104,19 +128,32 @@
     background-size: cover;
 }
 
-.swiper-container {
-    width: 100%;
-    height: 100%;
-  }
+
+.course{
+    &Teacher{
+        margin-bottom: 104px;  
+        h2{
+            font-size: $text-2l;
+            font-weight: bold;
+            margin-top: 40px;
+            margin-bottom: $text-xl;
+        }
+        &Img{
+            width: 96px;
+            height: 96px;
+            top: -48px;
+            left: 127px;
+            border: 4px solid $primary;
+        }
+        &Card{
+            height: 418px;
+            margin-top: 48px;
+            border: 2px solid #C0A4A5;
+            h4{
+                padding-top: 55px;
+                font-size: $text-m;
+            }
+        }
+    }
+}
   
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px !important; 
-  }
-  
-  .card-img-top {
-    height: 350px;
-    object-fit: cover;
-  }

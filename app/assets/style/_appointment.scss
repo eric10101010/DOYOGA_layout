@@ -1,28 +1,38 @@
+.appointment {
+    &Progress{
+        margin-top: 64px;
+        h3{
+            font-size: $text-2l;
+        }
+        &Box{
+            width: 540px;
+            margin: 0 auto;
+            margin-bottom: $text-xl;
+        }
+        &Item{
+            border-radius: $text-base;
+        }
+    }
+}
 .appointment{
-    &Item{
-        &Img{
-            img{
-                width: 100%;
-                height: 227px;
-                object-fit: cover;
-            }
-        }
-        &Content{
-            font-size: $text-xl;
-        }
-    }
-    &Card{
-        border: 4px solid #C0A4A5;
-        border-radius: $text-base;
-    }
     &Rules{
-        font-size: $text-xl;
+        margin-top: 32px;
+        margin-bottom: 104px;
+        h2{
+            font-size: $text-2l;
+        }
+        &Box {
+            width: 445px;
+            margin: 0 auto;
+        }
     }
 }
 
 .appointmentForm{
-    font-size: $text-base;
-    color: #707070;
+    &Box{
+        width: 348px;
+        margin: 0 auto;
+    }
     &Title{
         h3{
             font-size: $text-m;
@@ -30,14 +40,14 @@
         }
     }
     &Table{
-        width: 300px;
         margin-top: 32px;
         margin-bottom: 104px;
         span{
             font-size: $text-s;
         }
-        &Question{
-            margin-right: 32px;
+        a{
+            font-size: $text-m;
+            border-radius: 5px;
         }
     }
 }
@@ -49,13 +59,50 @@
     font-size: $text-base;
     &Info{
         width: 540px;
+        p{
+            font-size: $text-m;
+        }
+        &Header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            padding-top: 17px;
+            padding-bottom: 15px;
+            border-radius: 4px 4px 0px 0px;
+        }
+        &Content{
+            padding: 0 20px;
+            border-radius: 0px 0px 4px 4px;
+            span{
+                font-size: $text-m;
+            }
+        }
     }
-    &NoticeContent{
-        font-size: $text-base;
-        color: #907A7B;
-        width: 350px;
-        a{
-            margin-top: 32px;
+
+}
+
+.appointmentDone{
+    &Notice{
+        width: 540px;
+        margin: 0 auto;
+        &Box{
+            width: 350px;
+            margin: 0 auto;
+            margin-top: $text-l;
+            margin-bottom: 112px;
+            h3{
+                font-size: $text-m;
+            }
+        }
+        &Content{
+            color: #907A7B;
+            width: 350px;
+            a{
+                margin-top: 32px;
+                border-radius: 5px;
+            }
         }
     }
 }
+
