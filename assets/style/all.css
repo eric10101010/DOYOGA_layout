@@ -9377,9 +9377,19 @@ a {
   .indexBannerBox {
     width: 60%;
     height: 100%;
-    color: #707070; }
-  .indexBannerText h3, .indexBannerText .h3 {
-    font-size: 16px; }
+    color: #707070;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (max-width: 992px) {
+      .indexBannerBox {
+        width: 100%; } }
   .indexBannerText h2, .indexBannerText .h2 {
     font-size: 36px;
     font-weight: bold; }
@@ -9389,9 +9399,22 @@ a {
     font-size: 20px;
     border-radius: 5px; }
 
-.indexCase {
+.indexFunction {
   margin-top: 40px;
   margin-bottom: 64px; }
+  @media (max-width: 992px) {
+    .indexFunction {
+      margin-top: 32px;
+      margin-bottom: 47px; } }
+
+.indexCase {
+  margin-top: 40px; }
+
+.indexUser {
+  margin-top: 64px; }
+  @media (max-width: 992px) {
+    .indexUser {
+      margin-top: 32px; } }
 
 .indexSpace {
   margin: 64px 0; }
@@ -9399,21 +9422,44 @@ a {
 .indexTeacher {
   padding: 64px 0;
   background-color: #F5F0E7; }
+  @media (max-width: 992px) {
+    .indexTeacher {
+      padding: 32px 0; } }
   .indexTeacher h4, .indexTeacher .h4 {
     font-size: 36px; }
   .indexTeacher p {
     font-size: 16px; }
-  .indexTeacherTitle h3, .indexTeacherTitle .h3 {
-    margin-top: 30px;
-    font-size: 28px; }
-  .indexTeacherTitle p {
-    font-size: 20px; }
+  .indexTeacherTitle {
+    margin-top: 30px; }
+    @media (max-width: 992px) {
+      .indexTeacherTitle h3, .indexTeacherTitle .h3 {
+        text-align: center; } }
+    @media (max-width: 992px) {
+      .indexTeacherTitle {
+        width: 450px;
+        margin: 0 auto; } }
+    .indexTeacherTitle h3, .indexTeacherTitle .h3 {
+      font-size: 28px; }
+    .indexTeacherTitle p {
+      font-size: 20px; }
   .indexTeacherImg img {
     width: 100%;
     height: 628px;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 16px; }
+  @media (max-width: 992px) {
+    .indexTeacherBox {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; } }
   .indexTeacherItem {
     width: 540px;
     margin-bottom: 16px;
@@ -9424,15 +9470,29 @@ a {
     border-radius: 16px; }
     .indexTeacherItem img {
       padding-right: 20px; }
+    .indexTeacherItem h4, .indexTeacherItem .h4 {
+      font-size: 20px; }
   .indexTeacherTop {
+    margin-right: 185px; }
+    @media (max-width: 992px) {
+      .indexTeacherTop {
+        margin-right: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; } }
+  .indexTeacherTopBox {
     width: 635px;
     padding: 40px 48px;
     border-radius: 16px;
-    margin-right: 95px;
-    left: 50%; }
-    .indexTeacherTop h4, .indexTeacherTop .h4 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .indexTeacherTopBox h4, .indexTeacherTopBox .h4 {
       font-size: 20px; }
-    .indexTeacherTop img {
+    .indexTeacherTopBox img {
       width: 94px;
       height: 94px;
       -o-object-fit: cover;
@@ -9447,6 +9507,9 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 992px) {
+    .indexSpaceImgBox {
+      height: 266px; } }
 
 .indexSpaceImgOne img {
   width: 350px;
@@ -9454,6 +9517,9 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 16px; }
+  @media (max-width: 992px) {
+    .indexSpaceImgOne img {
+      width: 210px; } }
 
 .indexSpaceImgTwo {
   display: -webkit-box;
@@ -9472,6 +9538,10 @@ a {
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 16px; }
+    @media (max-width: 992px) {
+      .indexSpaceImgTwo img {
+        width: 90px;
+        height: 117px; } }
 
 .indexSpaceText {
   width: 445px; }
@@ -9479,6 +9549,9 @@ a {
     font-size: 28px; }
   .indexSpaceText p {
     font-size: 20px; }
+  @media (max-width: 992px) {
+    .indexSpaceText {
+      width: 330px; } }
 
 .indexCourse {
   padding: 64px 0; }
@@ -9492,6 +9565,10 @@ a {
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 16px; }
+    @media (max-width: 992px) {
+      .indexCourseImg img {
+        width: 150px;
+        height: 150px; } }
 
 .indexUser {
   background-color: #F5F0E7;
@@ -9505,30 +9582,44 @@ a {
 
 .functionTitle {
   font-size: 36px; }
-
-.functionBox {
-  margin-bottom: 64px; }
+  @media (max-width: 992px) {
+    .functionTitle h3, .functionTitle .h3 {
+      font-size: 28px; }
+    .functionTitle h4, .functionTitle .h4 {
+      font-size: 20px; } }
 
 .functionItem {
   width: 31.5%;
   border-radius: 16px; }
   .functionItem h4, .functionItem .h4 {
     font-size: 20px; }
+    @media (max-width: 992px) {
+      .functionItem h4, .functionItem .h4 {
+        font-size: 16px; } }
 
 .functionCardOne {
   background: url(../images/indexCard-1.jpeg) no-repeat 50% 50%;
   background-size: cover;
   height: 420px; }
+  @media (max-width: 992px) {
+    .functionCardOne {
+      height: 252px; } }
 
 .functionCardTwo {
   background: url(../images/indexCard-2.jpeg) no-repeat 50% 50%;
   background-size: cover;
   height: 420px; }
+  @media (max-width: 992px) {
+    .functionCardTwo {
+      height: 252px; } }
 
 .functionCardThree {
   background: url(../images/indexCard-3.jpeg) no-repeat 50% 50%;
   background-size: cover;
   height: 420px; }
+  @media (max-width: 992px) {
+    .functionCardThree {
+      height: 252px; } }
 
 .caseTitle h4, .caseTitle .h4 {
   font-size: 28px; }
@@ -9540,15 +9631,38 @@ a {
 .caseItem h4, .caseItem .h4 {
   font-size: 20px; }
 
-.caseText {
+@media (max-width: 992px) {
+  .caseItem {
+    margin-bottom: 24px; } }
+
+.caseImg {
   border: 1px solid #C0A4A5;
-  border-radius: 16px; }
-  .caseText img {
+  border-radius: 16px 16px 0 0;
+  border-bottom: none; }
+  @media (max-width: 992px) {
+    .caseImg {
+      border: 1px solid #C0A4A5;
+      border-right: none;
+      border-radius: 16px 0 0 16px; } }
+  .caseImg img {
     width: 100%;
-    height: 243px;
+    height: 246px;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 16px 16px 0 0; }
+    @media (max-width: 992px) {
+      .caseImg img {
+        border-radius: 16px 0 0 16px; } }
+
+.caseText {
+  border: 1px solid #C0A4A5;
+  border-radius: 0 0 16px 16px;
+  border-top: none; }
+  @media (max-width: 992px) {
+    .caseText {
+      border: 1px solid #C0A4A5;
+      border-left: none;
+      border-radius: 0 16px 16px 0; } }
   .caseText a {
     font-size: 20px;
     margin-top: 40px;
@@ -9605,9 +9719,11 @@ a {
   margin-bottom: 64px; }
   .courseInfo h2, .courseInfo .h2 {
     font-size: 36px;
-    font-weight: bold;
     margin-top: 64px;
     margin-bottom: 32px; }
+    @media (max-width: 992px) {
+      .courseInfo h2, .courseInfo .h2 {
+        font-size: 28px; } }
   .courseInfoBox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9621,14 +9737,19 @@ a {
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 16px; }
+    @media (max-width: 992px) {
+      .courseInfoImg img {
+        width: 330px; } }
+  @media (max-width: 992px) {
+    .courseInfoText {
+      width: 350px; } }
   .courseInfoText h3, .courseInfoText .h3 {
-    font-size: 28px;
-    font-weight: bold;
-    padding-bottom: 3px; }
-  .courseInfoText h4, .courseInfoText .h4 {
-    padding-top: 2px; }
+    font-size: 28px; }
   .courseInfoText span {
     font-size: 14px; }
+  .courseInfoText a {
+    font-size: 20px;
+    border: none; }
 
 .courseSearch {
   padding: 20px 0; }
@@ -9648,8 +9769,15 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 992px) {
+    .courseMainbar {
+      padding: 0 39px;
+      margin-bottom: 48px; } }
   .courseMainbarImg {
     width: 74%; }
+    @media (max-width: 992px) {
+      .courseMainbarImg {
+        width: 100%; } }
   .courseMainbarBox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9685,6 +9813,11 @@ a {
       left: 24px; }
   .courseMainbarText {
     width: 23%; }
+    @media (max-width: 992px) {
+      .courseMainbarText {
+        padding-top: 10px;
+        width: 330px;
+        margin: 0 auto; } }
     .courseMainbarText h3, .courseMainbarText .h3 {
       font-size: 20px; }
 
@@ -9692,6 +9825,10 @@ a {
   width: 445px;
   height: 196px;
   background-size: cover; }
+  @media (max-width: 992px) {
+    .courseMainbarItemOne, .courseMainbarItemTwo, .courseMainbarItemThree, .courseMainbarItemFour {
+      width: 330px;
+      height: 196px; } }
 
 .courseMainbarItemOne {
   background: url(../images/course-1.jpg) no-repeat 50% 70%;
@@ -9712,6 +9849,10 @@ a {
 .courseMainbarCardOne, .courseMainbarCardTwo, .courseMainbarCardThree, .courseMainbarCardFour {
   width: 350px;
   height: 196px; }
+  @media (max-width: 992px) {
+    .courseMainbarCardOne, .courseMainbarCardTwo, .courseMainbarCardThree, .courseMainbarCardFour {
+      width: 330px;
+      height: 196px; } }
 
 .courseMainbarCardOne {
   background: url(../images/course-2.jpg) no-repeat 50% 70%;
@@ -9741,21 +9882,22 @@ a {
     height: 96px;
     top: -48px;
     left: 127px;
-    border: 4px solid #907A7B; }
+    border: 4px solid; }
   .courseTeacherCard {
     height: 418px;
     margin-top: 48px;
-    border: 2px solid #C0A4A5; }
+    border-radius: 16px; }
     .courseTeacherCard h4, .courseTeacherCard .h4 {
       padding-top: 55px;
       font-size: 20px; }
 
 .schedule h2, .schedule .h2 {
-  font-size: 42px;
+  font-size: 28px;
   padding-top: 64px;
   padding-bottom: 32px; }
 
 .scheduleBox {
+  margin: 0 auto;
   padding: 40px 48px;
   border-radius: 16px; }
 
@@ -9764,10 +9906,16 @@ a {
 
 .scheduleRules {
   margin-bottom: 104px; }
+  @media (max-width: 992px) {
+    .scheduleRules {
+      margin-bottom: 80px; } }
   .scheduleRules h2, .scheduleRules .h2 {
-    color: #707070;
-    font-size: 42px;
+    font-size: 28px;
     padding: 32px 0; }
+    @media (max-width: 992px) {
+      .scheduleRules h2, .scheduleRules .h2 {
+        padding-top: 40px;
+        padding-bottom: 24px; } }
   .scheduleRulesBox {
     padding: 0 95px; }
   .scheduleRulesItem {
@@ -9780,62 +9928,71 @@ a {
     padding: 16px 24px;
     border-radius: 16px; }
 
-.space h3, .space .h3 {
+.space h2, .space .h2 {
   font-size: 28px;
-  color: #907A7B;
   margin-top: 64px;
   margin-bottom: 32px;
   font-weight: bold; }
 
-.spaceMainbarContent {
-  margin-bottom: 24px; }
+.space h3, .space .h3 {
+  font-size: 28px;
+  font-weight: bold; }
+  @media (max-width: 992px) {
+    .space h3, .space .h3 {
+      font-size: 24px; } }
+
+.spaceMainbarItem img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px; }
+  @media (max-width: 992px) {
+    .spaceMainbarItem img {
+      width: 100%;
+      height: 216px; } }
 
 .spaceMainbarText {
-  padding: 24px;
-  color: #ffffff; }
-  .spaceMainbarText h4, .spaceMainbarText .h4 {
-    font-size: 28px; }
-
-.spaceMainbarImg {
-  border-radius: 16px;
-  -o-object-fit: cover;
-     object-fit: cover; }
+  padding: 24px; }
+  @media (max-width: 992px) {
+    .spaceMainbarText {
+      padding: 12px; } }
 
 .spaceSidebarBox {
   padding: 32px;
-  background-color: #F5F0E7; }
+  border-radius: 16px; }
+  @media (max-width: 992px) {
+    .spaceSidebarBox {
+      padding: 16px; } }
   .spaceSidebarBox h4, .spaceSidebarBox .h4 {
-    font-size: 20px;
-    color: #907A7B; }
-  .spaceSidebarBox p {
-    color: #907A7B; }
+    font-size: 20px; }
   .spaceSidebarBox a {
     padding-top: 12px;
-    font-weight: bold;
-    color: #907A7B; }
+    font-weight: bold; }
 
 .spaceRecommend {
-  margin-top: 40px;
-  background-color: #F5F0E7; }
+  color: #907A7B;
+  margin-top: 40px; }
   .spaceRecommend h2, .spaceRecommend .h2 {
     font-size: 28px;
     font-weight: bold;
-    color: #907A7B;
     padding-top: 40px;
     padding-bottom: 32px; }
+    @media (max-width: 992px) {
+      .spaceRecommend h2, .spaceRecommend .h2 {
+        padding-bottom: 24px; } }
   .spaceRecommendItem {
     margin-bottom: 56px; }
   .spaceRecommendImg {
     width: 255px;
     height: 196px;
     -o-object-fit: cover;
-       object-fit: cover; }
-  .spaceRecommendText {
-    color: #907A7B; }
-    .spaceRecommendText h4, .spaceRecommendText .h4 {
-      font-size: 20px;
-      font-weight: bold;
-      padding-top: 8px; }
+       object-fit: cover;
+    border-radius: 16px; }
+  .spaceRecommendText h4, .spaceRecommendText .h4 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 8px; }
 
 .appointmentProgress {
   margin-top: 64px; }
@@ -9845,12 +10002,24 @@ a {
     width: 540px;
     margin: 0 auto;
     margin-bottom: 32px; }
+    @media (max-width: 992px) {
+      .appointmentProgressBox {
+        width: 330px;
+        margin-bottom: 24px; } }
+    .appointmentProgressBox p {
+      padding: 0 48px; }
+      @media (max-width: 992px) {
+        .appointmentProgressBox p {
+          padding: 0 13px; } }
   .appointmentProgressItem {
     border-radius: 16px; }
 
 .appointmentRules {
   margin-top: 32px;
   margin-bottom: 104px; }
+  @media (max-width: 992px) {
+    .appointmentRules {
+      margin-top: 24px; } }
   .appointmentRules h2, .appointmentRules .h2 {
     font-size: 28px; }
   .appointmentRulesBox {
@@ -9858,8 +10027,11 @@ a {
     margin: 0 auto; }
 
 .appointmentFormBox {
-  width: 348px;
+  width: 350px;
   margin: 0 auto; }
+  @media (max-width: 992px) {
+    .appointmentFormBox {
+      width: 330px; } }
 
 .appointmentFormTitle h3, .appointmentFormTitle .h3 {
   font-size: 20px;
@@ -9868,6 +10040,9 @@ a {
 .appointmentFormTable {
   margin-top: 32px;
   margin-bottom: 104px; }
+  @media (max-width: 992px) {
+    .appointmentFormTable {
+      margin-bottom: 80px; } }
   .appointmentFormTable span {
     font-size: 14px; }
   .appointmentFormTable a {
@@ -9880,9 +10055,15 @@ a {
 .appointmentDone {
   font-size: 16px; }
   .appointmentDoneInfo {
-    width: 540px; }
-    .appointmentDoneInfo p {
-      font-size: 20px; }
+    width: 540px;
+    margin-top: 12px; }
+    @media (max-width: 992px) {
+      .appointmentDoneInfo {
+        margin-top: 4px; } }
+    .appointmentDoneInfo h4, .appointmentDoneInfo .h4 {
+      font-size: 20px;
+      padding-top: 20px;
+      padding-bottom: 32px; }
     .appointmentDoneInfoHeader {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -9900,6 +10081,8 @@ a {
     .appointmentDoneInfoContent {
       padding: 0 20px;
       border-radius: 0px 0px 4px 4px; }
+      .appointmentDoneInfoContent h5, .appointmentDoneInfoContent .h5 {
+        padding-top: 3px; }
       .appointmentDoneInfoContent span {
         font-size: 20px; }
 
@@ -9910,7 +10093,11 @@ a {
     width: 350px;
     margin: 0 auto;
     margin-top: 24px;
-    margin-bottom: 112px; }
+    margin-bottom: 104px; }
+    @media (max-width: 992px) {
+      .appointmentDoneNoticeBox {
+        width: 330px;
+        margin-bottom: 80px; } }
     .appointmentDoneNoticeBox h3, .appointmentDoneNoticeBox .h3 {
       font-size: 20px; }
   .appointmentDoneNoticeContent {
@@ -9919,6 +10106,12 @@ a {
     .appointmentDoneNoticeContent a {
       margin-top: 32px;
       border-radius: 5px; }
+
+.appointmentBtn {
+  background-color: #907A7B; }
+  @media (max-width: 992px) {
+    .appointmentBtn {
+      background-color: #C0A4A5; } }
 
 .contact {
   margin-top: 64px;
