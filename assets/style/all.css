@@ -9763,10 +9763,15 @@ a {
 
 .courseInfo {
   width: 920px;
+  margin: 0 auto;
   margin-bottom: 64px; }
+  @media (max-width: 992px) {
+    .courseInfo {
+      width: 710px; } }
   @media (max-width: 767px) {
     .courseInfo {
-      width: 345px; } }
+      width: 345px;
+      margin: 0 auto; } }
   .courseInfo h2, .courseInfo .h2 {
     font-size: 36px;
     margin-top: 64px;
@@ -9774,6 +9779,10 @@ a {
     @media (max-width: 992px) {
       .courseInfo h2, .courseInfo .h2 {
         font-size: 28px; } }
+    @media (max-width: 992px) {
+      .courseInfo h2, .courseInfo .h2 {
+        margin-top: 48px;
+        margin-bottom: 24px; } }
   .courseInfoBox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9796,16 +9805,27 @@ a {
     @media (max-width: 992px) {
       .courseInfoImg img {
         width: 330px; } }
+    @media (max-width: 767px) {
+      .courseInfoImg img {
+        width: 345px;
+        height: 218px; } }
   @media (max-width: 992px) {
     .courseInfoText {
       width: 350px; } }
   .courseInfoText h3, .courseInfoText .h3 {
     font-size: 28px; }
+    @media (max-width: 767px) {
+      .courseInfoText h3, .courseInfoText .h3 {
+        margin-top: 8px; } }
   .courseInfoText span {
     font-size: 14px; }
   .courseInfoText a {
     font-size: 20px;
     border: none; }
+    @media (max-width: 767px) {
+      .courseInfoText a {
+        margin-top: 16px;
+        margin-bottom: 48px; } }
 
 .courseSearch {
   padding: 20px 0; }
@@ -9818,6 +9838,7 @@ a {
 
 .courseMainbar {
   width: 1110px;
+  margin: 0 auto;
   margin-top: 54px;
   margin-bottom: 34px;
   display: -webkit-box;
@@ -9828,15 +9849,12 @@ a {
           justify-content: space-between; }
   @media (max-width: 992px) {
     .courseMainbar {
-      padding: 0 39px;
-      margin-bottom: 48px; } }
+      width: 710px;
+      margin-top: 46px; } }
   @media (max-width: 767px) {
     .courseMainbar {
       width: 345px;
-      padding: 0 15px; } }
-  @media (max-width: 767px) {
-    .courseMainbar {
-      padding: 0 15px; } }
+      margin-bottom: 48px; } }
   .courseMainbarImg {
     width: 74%; }
     @media (max-width: 992px) {
@@ -9888,6 +9906,9 @@ a {
         padding-top: 10px;
         width: 330px;
         margin: 0 auto; } }
+  @media (max-width: 992px) and (max-width: 767px) {
+    .courseMainbarText {
+      padding-top: 2px; } }
     .courseMainbarText h3, .courseMainbarText .h3 {
       font-size: 20px; }
 
@@ -9901,7 +9922,8 @@ a {
       height: 196px; } }
   @media (max-width: 767px) {
     .courseMainbarItemOne, .courseMainbarItemTwo, .courseMainbarItemThree, .courseMainbarItemFour {
-      width: 345px; } }
+      width: 345px;
+      margin-bottom: 30px; } }
 
 .courseMainbarItemOne {
   background: url(../images/course-1.jpg) no-repeat 50% 70%;
@@ -9926,6 +9948,9 @@ a {
     .courseMainbarCardOne, .courseMainbarCardTwo, .courseMainbarCardThree, .courseMainbarCardFour {
       width: 330px;
       height: 196px; } }
+  @media (max-width: 767px) {
+    .courseMainbarCardOne, .courseMainbarCardTwo, .courseMainbarCardThree, .courseMainbarCardFour {
+      width: 345px; } }
 
 .courseMainbarCardOne {
   background: url(../images/course-2.jpg) no-repeat 50% 70%;
@@ -9950,6 +9975,10 @@ a {
     font-weight: bold;
     margin-top: 40px;
     margin-bottom: 32px; }
+    @media (max-width: 767px) {
+      .courseTeacher h2, .courseTeacher .h2 {
+        margin-top: 32px;
+        margin-bottom: 24px; } }
   .courseTeacherImg {
     width: 96px;
     height: 96px;
@@ -9968,11 +9997,18 @@ a {
   font-size: 28px;
   padding-top: 64px;
   padding-bottom: 32px; }
+  @media (max-width: 767px) {
+    .schedule h2, .schedule .h2 {
+      padding-top: 48px;
+      padding-bottom: 24px; } }
 
 .scheduleBox {
   margin: 0 auto;
   padding: 40px 48px;
   border-radius: 16px; }
+  @media (max-width: 767px) {
+    .scheduleBox {
+      padding: 40px 0px 48px 48px; } }
 
 .scheduleTableTitle {
   font-size: 20px; }
@@ -9982,6 +10018,9 @@ a {
   @media (max-width: 992px) {
     .scheduleRules {
       margin-bottom: 80px; } }
+  @media (max-width: 767px) {
+    .scheduleRules {
+      margin-bottom: 88px; } }
   .scheduleRules h2, .scheduleRules .h2 {
     font-size: 28px;
     padding: 32px 0; }
@@ -9989,8 +10028,18 @@ a {
       .scheduleRules h2, .scheduleRules .h2 {
         padding-top: 40px;
         padding-bottom: 24px; } }
+    @media (max-width: 767px) {
+      .scheduleRules h2, .scheduleRules .h2 {
+        padding-top: 32px; } }
   .scheduleRulesBox {
-    padding: 0 95px; }
+    width: 730px;
+    margin: 0 auto; }
+    @media (max-width: 992px) {
+      .scheduleRulesBox {
+        width: 570px; } }
+    @media (max-width: 767px) {
+      .scheduleRulesBox {
+        width: 345px; } }
   .scheduleRulesItem {
     border-radius: 16px; }
     .scheduleRulesItem span {
@@ -10000,12 +10049,19 @@ a {
   .scheduleRulesText {
     padding: 16px 24px;
     border-radius: 16px; }
+    @media (max-width: 767px) {
+      .scheduleRulesText {
+        padding: 16px; } }
 
 .space h2, .space .h2 {
   font-size: 28px;
   margin-top: 64px;
   margin-bottom: 32px;
   font-weight: bold; }
+  @media (max-width: 767px) {
+    .space h2, .space .h2 {
+      margin-top: 48px;
+      margin-bottom: 24px; } }
 
 .space h3, .space .h3 {
   font-size: 28px;
@@ -10024,12 +10080,19 @@ a {
     .spaceMainbarItem img {
       width: 100%;
       height: 216px; } }
+  @media (max-width: 767px) {
+    .spaceMainbarItem img {
+      width: 345px;
+      height: 350px; } }
 
 .spaceMainbarText {
   padding: 24px; }
   @media (max-width: 992px) {
     .spaceMainbarText {
       padding: 12px; } }
+  @media (max-width: 767px) {
+    .spaceMainbarText {
+      padding: 24px; } }
 
 .spaceSidebarBox {
   padding: 32px;
@@ -10054,6 +10117,9 @@ a {
     @media (max-width: 992px) {
       .spaceRecommend h2, .spaceRecommend .h2 {
         padding-bottom: 24px; } }
+    @media (max-width: 767px) {
+      .spaceRecommend h2, .spaceRecommend .h2 {
+        padding-bottom: 32px; } }
   .spaceRecommendItem {
     margin-bottom: 56px; }
   .spaceRecommendImg {
