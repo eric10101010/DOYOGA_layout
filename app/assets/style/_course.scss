@@ -4,33 +4,41 @@
         margin-bottom: 64px;
         h2{
             font-size: $text-2xl;
-            font-weight: bold;
             margin-top: 64px;
             margin-bottom: $text-xl;
+            @include pad{
+                font-size: $text-2l;
+            } 
         }
         &Box {
             display: flex;
             justify-content: space-between;
+
         }
         &Img{
-           img{
-               width: 540px;
-               height: 341px;
-               object-fit: cover;
-               border-radius: 16px;
-           }
+            img{
+                width: 540px;
+                height: 341px;
+                object-fit: cover;
+                border-radius: 16px;
+                @include pad{
+                    width: 330px;
+                }  
+            }
         }
         &Text{
+            @include pad{
+                width: 350px;
+            }  
             h3{
                 font-size: $text-2l;
-                font-weight: bold;
-                padding-bottom: 3px;
-            }
-            h4{
-                padding-top: 2px;
             }
             span{
                 font-size: $text-s;
+            }
+            a{
+                font-size: $text-m;
+                border:none;
             }
         }
     }
@@ -50,8 +58,15 @@
     margin-bottom: 34px;
     display: flex;
     justify-content: space-between;
+    @include pad{
+        padding: 0 39px;
+        margin-bottom: 48px;
+    } 
     &Img{
         width: 74%;
+        @include pad{
+            width: 100%;
+        }  
     }
     &Box{
         display: flex;
@@ -80,6 +95,11 @@
     }
     &Text{
         width: 23%;
+        @include pad{
+            padding-top: 10px;
+            width: 330px;
+            margin: 0 auto;
+        } 
         h3{
             font-size: $text-m;
         }
@@ -90,6 +110,10 @@
     width: 445px;
     height: 196px;
     background-size: cover;
+    @include pad{
+        width: 330px;
+        height: 196px;
+    } 
 }
 .courseMainbarItemOne{
     background:url(../images/course-1.jpg) no-repeat 50% 70%;
@@ -110,6 +134,10 @@
 .courseMainbarCardOne, .courseMainbarCardTwo, .courseMainbarCardThree, .courseMainbarCardFour{
     width: 350px;
     height: 196px;
+    @include pad{
+        width: 330px;
+        height: 196px;
+    } 
 }
  .courseMainbarCardOne{
     background:url(../images/course-2.jpg) no-repeat 50% 70%;
@@ -143,12 +171,12 @@
             height: 96px;
             top: -48px;
             left: 127px;
-            border: 4px solid $primary;
+            border: 4px solid ;
         }
         &Card{
             height: 418px;
             margin-top: 48px;
-            border: 2px solid #C0A4A5;
+            border-radius: $text-base;
             h4{
                 padding-top: 55px;
                 font-size: $text-m;

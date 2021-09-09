@@ -7,11 +7,17 @@
             width: 60%;
             height: 100%;
             color: $gary;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include pad{
+                width: 100%;
+            }
+            // @include mobile{
+            //     width: 100%;
+            // }
         }
         &Text{
-            h3{
-                font-size: $text-base;
-            }
             h2{
                 font-size: $text-2xl;
                 font-weight: bold;
@@ -27,9 +33,22 @@
             }
         }
     }
-    &Case{
+    &Function{
         margin-top: 40px;
         margin-bottom: 64px;
+        @include pad{
+            margin-top: 32px;
+            margin-bottom: 47px;
+        }
+    }
+    &Case{
+        margin-top: 40px;
+    }
+    &User{
+        margin-top: 64px;
+        @include pad{
+            margin-top: $text-xl;
+        }
     }
     &Space{
         margin: 64px 0;
@@ -37,6 +56,9 @@
     &Teacher {
         padding: 64px 0;
         background-color: $info;
+        @include pad{
+            padding: 32px 0;
+        }
         h4{
             font-size: $text-2xl;
         }
@@ -44,8 +66,17 @@
             font-size: $text-base;
         }
         &Title{
+            margin-top: 30px;
             h3{
-                margin-top: 30px;
+                @include pad{
+                    text-align: center;
+                }
+            }
+            @include pad{
+               width: 450px;
+               margin: 0 auto;
+            }
+            h3{
                 font-size: $text-2l;
             }
             p{
@@ -60,6 +91,13 @@
                 border-radius: $text-base;
             }
         }
+        &Box {
+            @include pad{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+        }
         &Item{
             width: 540px;
             margin-bottom: 16px;
@@ -69,13 +107,23 @@
             img{
                 padding-right: 20px;
             }
+            h4{
+                font-size: $text-m;
+            }
         }
         &Top{
+            margin-right: 185px;
+            @include pad{
+                margin-right: 0;
+                display: flex;
+                justify-content: flex-end;
+             }
+        }
+        &TopBox{
             width: 635px;
             padding: 40px 48px;
             border-radius: $text-base;
-            margin-right: 95px;
-            left: 50%;
+            align-items: center;
             h4{
                 font-size: $text-m;
             }
@@ -92,6 +140,9 @@
             height: 444px;
             display: flex;
             justify-content: space-between;
+            @include pad{
+                height: 266px;
+            }
         }
         &ImgOne{
             img{
@@ -99,6 +150,9 @@
                 height: 100%;
                 object-fit: cover;
                 border-radius: $text-base;
+                @include pad{
+                    width: 210px;
+                }
             }
         }
         &ImgTwo{
@@ -110,6 +164,10 @@
                 height: 207px;
                 object-fit: cover;
                 border-radius: $text-base;
+                @include pad{
+                    width: 90px;
+                    height: 117px;
+                }
             }
         }
         &Text {
@@ -119,6 +177,9 @@
             }
             p{
                 font-size: $text-m;
+            }
+            @include pad{
+                width: 330px;
             }
         }
     }
@@ -138,6 +199,10 @@
                 height: 445px;
                 object-fit: cover;
                 border-radius: $text-base;
+                @include pad{
+                    width: 150px;
+                    height: 150px;
+                }
             }
         }
     }
@@ -156,31 +221,48 @@
 .function{
     &Title{
         font-size: $text-2xl;
-    }
-    &Box{
-        margin-bottom: 64px;
+        @include pad{
+            h3{
+                font-size: $text-2l;
+            }
+            h4{
+                font-size: $text-m;
+            }
+        }
     }
     &Item{
         width: 31.5%;;
         border-radius: 16px;
         h4{
             font-size: $text-m;
+            @include pad{
+                font-size: $text-base;
+            }
         }
     }
     &CardOne{
         background: url(../images/indexCard-1.jpeg) no-repeat 50% 50%;
         background-size: cover;
         height: 420px;
+        @include pad{
+            height: 252px;
+        }
     }
     &CardTwo{
         background: url(../images/indexCard-2.jpeg) no-repeat 50% 50%;
         background-size: cover;
         height: 420px;
+        @include pad{
+            height: 252px;
+        }
     }
     &CardThree{
         background: url(../images/indexCard-3.jpeg) no-repeat 50% 50%;
         background-size: cover;
         height: 420px;
+        @include pad{
+            height: 252px;
+        }
     }
 }
 .case{
@@ -197,15 +279,37 @@
         h4{
             font-size: $text-m;
         }
+        @include pad{
+            margin-bottom: $text-l;
+        }
+    }
+    &Img{
+        border: 1px solid $secondary;
+        border-radius: $text-base $text-base 0 0;
+        border-bottom: none;
+        @include pad{
+            border: 1px solid $secondary;
+            border-right: none;
+            border-radius: $text-base 0 0 $text-base;
+        }
+        img{
+            width: 100%;
+            height: 246px;
+            object-fit: cover;
+            border-radius: $text-base $text-base 0 0;
+            @include pad{
+                border-radius: $text-base 0 0 $text-base;
+            }
+        }
     }
     &Text{
         border: 1px solid $secondary;
-        border-radius: $text-base;
-        img{
-            width: 100%;
-            height: 243px;
-            object-fit: cover;
-            border-radius: $text-base $text-base 0 0;
+        border-radius: 0 0 $text-base $text-base;
+        border-top: none;
+        @include pad{
+            border: 1px solid $secondary;
+            border-left: none;
+            border-radius: 0 $text-base $text-base 0;
         }
         a{
             font-size: $text-m;

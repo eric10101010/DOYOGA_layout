@@ -1,42 +1,50 @@
 .space{
-    h3{
+    h2{
         font-size: $text-2l;
-        color: #907A7B;
         margin-top: 64px;
         margin-bottom: 32px;
         font-weight: bold;
     }
-    &Mainbar{
-        &Content{
-            margin-bottom: $text-l;
+    h3{
+        font-size: $text-2l;
+        font-weight: bold;
+        @include pad {
+            font-size: $text-l;
         }
-        &Text{
-            padding: $text-l;
-            color:$white;
-            h4{
-                font-size: $text-2l;
+    }
+    &Mainbar{
+        &Item{
+            img{
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+                border-radius: $text-base;
+                @include pad{
+                    width: 100%;
+                    height: 216px;
+                }
             }
         }
-        &Img {
-            border-radius: $text-base;
-            object-fit: cover;
+        &Text{
+            padding: 24px;
+            @include pad{
+                padding: 12px;
+            }
         }
     }
     &Sidebar{
         &Box{
             padding: $text-xl;
-            background-color: #F5F0E7;
+            border-radius: $text-base;
+            @include pad{
+                padding: $text-base;
+            }
             h4{
                 font-size: $text-m;
-                color: #907A7B;
-            }
-            p{
-                color: #907A7B;
             }
             a{
                 padding-top: 12px;
                 font-weight: bold;
-                color: #907A7B;
             }
         }
     }
@@ -44,14 +52,16 @@
 
 .space{
     &Recommend{
+        color: $primary;
         margin-top: 40px;
-        background-color: #F5F0E7;
         h2{
             font-size: $text-2l;
             font-weight: bold;
-            color: #907A7B;
             padding-top: 40px;
             padding-bottom: $text-xl;
+            @include pad{
+                padding-bottom: $text-l;
+            }
         }
         &Item{
             margin-bottom: 56px;
@@ -60,9 +70,9 @@
             width: 255px;
             height: 196px;
             object-fit: cover;
+            border-radius: $text-base;
         }
         &Text{
-            color: #907A7B;    
             h4{
                 font-size: $text-m;
                 font-weight: bold;
