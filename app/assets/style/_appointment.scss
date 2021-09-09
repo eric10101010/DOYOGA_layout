@@ -1,8 +1,14 @@
 .appointment {
     &Progress{
         margin-top: 64px;
+        @include mobile {
+            margin-top: 48px;
+        }
         h3{
             font-size: $text-2l;
+            @include mobile {
+                margin-bottom: $text-l;;
+            }
         }
         &Box{
             width: 540px;
@@ -40,19 +46,32 @@
         }
     }
 }
-
 .appointmentForm{
+    &Question{
+        label{
+            margin-right: 16px;
+            @include mobile {
+                margin-right: 12px;
+            }
+        }
+    }
     &Box{
         width: 350px;
         margin: 0 auto;
         @include pad {
             width: 330px;
         }
+        @include mobile {
+            width: 345px;
+            margin-bottom: 88px;
+        }
     }
     &Title{
         h3{
+            margin-top: 3px;
+        }
+        h2{
             font-size: $text-m;
-            color: #C0A4A5;
         }
     }
     &Table{
@@ -60,6 +79,9 @@
         margin-bottom: 104px;
         @include pad{
             margin-bottom: 80px;
+        }
+        @include mobile{
+            margin-bottom: 0px;
         }
         span{
             font-size: $text-s;
@@ -69,11 +91,11 @@
             border-radius: 5px;
         }
     }
+
 }
 .formDate{
     width: 118px;
 }
-
 .appointmentDone{
     font-size: $text-base;
     &Info{
@@ -81,6 +103,10 @@
         margin-top: 12px;
         @include pad {
             margin-top: 4px;
+        }
+        @include mobile {
+            width: 345px;
+            margin-top: 12px;
         }
         h4{
             font-size: $text-m;
@@ -107,13 +133,14 @@
             }
         }
     }
-
 }
-
 .appointmentDone{
     &Notice{
         width: 540px;
         margin: 0 auto;
+        @include mobile {
+            width: 345px;
+        }
         &Box{
             width: 350px;
             margin: 0 auto;
@@ -123,21 +150,18 @@
                 width: 330px;
                 margin-bottom: 80px;
             }
+            @include pad {
+                margin-bottom: 88px;
+            }
             h3{
                 font-size: $text-m;
             }
-        }
-        &Content{
-            color: #907A7B;
-            width: 350px;
             a{
-                margin-top: 32px;
                 border-radius: 5px;
             }
         }
     }
 }
-
 .appointmentBtn {
     background-color: $primary;
     @include pad {

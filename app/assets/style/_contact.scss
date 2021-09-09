@@ -1,21 +1,43 @@
 .contact{
     margin-top: 64px;
     margin-bottom: 110px;
+    &Box {
+        @include pad {
+            width: 570px;
+            margin: 0 auto;
+        }
+        @include mobile {
+            width: 345px;
+            margin: 0 auto;
+        }
+    }
     &Info{
         width: 57%;
+        @include pad {
+            width: 100%;
+        }
     }
     &Form{
         width: 40%;
         padding: 0 32px;
         border-radius: $text-base;
+        @include pad {
+            width: 100%;
+        }
         h4{
             font-size: $text-m;
         }
     }
     &Map{
         iframe{
+            width: 100%;
             height: 360px;
             border-radius: $text-base;
+            // @include pad {
+            //     width: 570px;
+            //     height: 323px;
+            //     margin: 0 auto;
+            // }
         }
     }
     &Title{

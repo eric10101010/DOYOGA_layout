@@ -2,6 +2,10 @@
     &Info{
         width: 920px;
         margin-bottom: 64px;
+        @include mobile{
+            width: 345px;
+
+        }
         h2{
             font-size: $text-2xl;
             margin-top: 64px;
@@ -13,7 +17,9 @@
         &Box {
             display: flex;
             justify-content: space-between;
-
+            @include mobile {
+                flex-direction: column;
+            }
         }
         &Img{
             img{
@@ -23,7 +29,7 @@
                 border-radius: 16px;
                 @include pad{
                     width: 330px;
-                }  
+                } 
             }
         }
         &Text{
@@ -54,6 +60,7 @@
     }
 }
 .courseMainbar{
+    width: 1110px;
     margin-top: 54px;
     margin-bottom: 34px;
     display: flex;
@@ -61,17 +68,28 @@
     @include pad{
         padding: 0 39px;
         margin-bottom: 48px;
+    }
+    @include mobile{
+        width: 345px;
+        padding: 0 15px;
+    }
+    @include mobile{
+        padding: 0 15px;
     } 
     &Img{
         width: 74%;
         @include pad{
             width: 100%;
-        }  
+        }
+  
     }
     &Box{
         display: flex;
         justify-content: space-between;
         margin-bottom: 30px;
+        @include mobile {
+            flex-direction: column;
+        }
 
     }
     &Item {
@@ -113,7 +131,10 @@
     @include pad{
         width: 330px;
         height: 196px;
-    } 
+    }
+    @include mobile{
+        width: 345px;
+    }  
 }
 .courseMainbarItemOne{
     background:url(../images/course-1.jpg) no-repeat 50% 70%;
