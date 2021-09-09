@@ -1,24 +1,33 @@
 .schedule{
     h2{
         font-size: $text-2l;
-        padding-top: 64px;
+        padding-top:$text-5xl;
         padding-bottom: $text-xl;
+        @include mobile {
+            padding-top: $text-4xl;
+            padding-bottom: $text-l;
+        }
     }
     &Box{
         margin: 0 auto;
         padding: 40px 48px;
         border-radius: $text-base;
+        @include mobile{
+            padding: 40px 0px 48px 48px;
+        }
     }
     &TableTitle{
         font-size: $text-m;
     }
 }
-
 .schedule{
     &Rules{
         margin-bottom: 104px;
         @include pad {
             margin-bottom: 80px;
+        }
+        @include mobile {
+            margin-bottom: 88px;
         }
         h2{
             font-size: $text-2l;
@@ -27,9 +36,19 @@
                 padding-top: 40px;
                 padding-bottom: $text-l;
             }
+            @include mobile {
+                padding-top: $text-xl;
+            }
         }
         &Box{
-            padding: 0 95px;
+            width: 730px;
+            margin: 0 auto;
+            @include pad{
+                width: 570px;
+            }
+            @include mobile{
+                width: 345px;
+            }
         }
         &Item{
             border-radius: $text-base;
@@ -42,6 +61,9 @@
         &Text{
             padding: $text-base $text-l;
             border-radius: $text-base;
+            @include mobile {
+                padding: $text-base;
+            }
         }
     }
 }

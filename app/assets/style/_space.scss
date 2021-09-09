@@ -4,6 +4,10 @@
         margin-top: 64px;
         margin-bottom: 32px;
         font-weight: bold;
+        @include mobile {
+            margin-top: $text-4xl;
+            margin-bottom: $text-l;
+        }
     }
     h3{
         font-size: $text-2l;
@@ -23,12 +27,20 @@
                     width: 100%;
                     height: 216px;
                 }
+                @include mobile{
+                    width: 345px;
+                    height: 350px;
+                }
+                
             }
         }
         &Text{
             padding: 24px;
             @include pad{
                 padding: 12px;
+            }
+            @include mobile{
+                padding: 24px;
             }
         }
     }
@@ -61,6 +73,9 @@
             padding-bottom: $text-xl;
             @include pad{
                 padding-bottom: $text-l;
+            }
+            @include mobile{
+                padding-bottom: $text-xl;
             }
         }
         &Item{
