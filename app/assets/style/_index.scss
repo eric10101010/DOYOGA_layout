@@ -37,8 +37,8 @@
         margin-top: 40px;
         margin-bottom: 64px;
         @include pad{
-            margin-top: 32px;
-            margin-bottom: 47px;
+            margin-top: $text-xl;
+            margin-bottom: $text-4xl;
         }
     }
     &Case{
@@ -52,6 +52,9 @@
     }
     &Space{
         margin: 64px 0;
+        @include mobile {
+            margin: $text-4xl 0;
+        }
     }
     &Teacher {
         padding: 64px 0;
@@ -167,12 +170,21 @@
         }
     }
     &Space{
+        &Box{
+            @include mobile {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
         &ImgBox{
             height: 444px;
             display: flex;
             justify-content: space-between;
             @include pad{
                 height: 266px;
+            }
+            @include mobile{
+                height: 210px;
             }
         }
         &ImgOne{
@@ -213,22 +225,36 @@
         }
         &Text {
             width: 445px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             h3{
                 font-size: $text-2l;
             }
             p{
                 font-size: $text-m;
             }
+            a{
+                @include mobile{
+                    margin-bottom: $text-base;
+                }
+            }
             @include pad{
                 width: 330px;
             }
-            @include pad{
-                width: 100%;
+            @include mobile{
+                width: 345px;
             }
         }
     }
     &Course{
         padding: 64px 0;
+        @include pad{
+            padding: 56px 0;
+        }
+        @include mobile{
+            padding: 48px 0;
+        }
         &Text{
             h3{
                 font-size: $text-2l;   
@@ -246,6 +272,10 @@
                 @include pad{
                     width: 150px;
                     height: 150px;
+                }
+                @include mobile{
+                    width: 165px;
+                    height: 165px;
                 }
             }
         }
@@ -276,17 +306,13 @@
     }
     &Item{
         width: 350px;
+        margin: 0 auto;
         border-radius: $text-base;
         @include pad {
             width: 210px;
         }
         @include mobile {
             width: 345px;
-        }
-        &Box{
-            @include mobile {
-                width: 345px;
-            }
         }
     }
     &CardOne{
@@ -296,6 +322,10 @@
         @include pad{
             height: 252px;
         }
+        @include mobile{
+            height: 420px;
+            margin-bottom: $text-base;
+        }
     }
     &CardTwo{
         background: url(../images/indexCard-2.jpeg) no-repeat 50% 50%;
@@ -304,6 +334,10 @@
         @include pad{
             height: 252px;
         }
+        @include mobile{
+            height: 420px;
+            margin-bottom: $text-base;
+        }
     }
     &CardThree{
         background: url(../images/indexCard-3.jpeg) no-repeat 50% 50%;
@@ -311,6 +345,9 @@
         height: 420px;
         @include pad{
             height: 252px;
+        }
+        @include mobile{
+            height: 420px;
         }
     }
 }
