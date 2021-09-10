@@ -33,7 +33,7 @@ var swiper = new Swiper(".mySwiper", {
     },
     992: {
       slidesPerView: 3,
-      slidesPerColumn: 1,
+      slidesPerColumn: 2,
     },
   },
   navigation: {

@@ -20,35 +20,86 @@
     <li><a href="#" class="d-block fs-1"><i class="fab fa-line"></i></a></li>
   </ul>
   <header>
-    <div class="header d-flex justify-content-center">
-      <div class="headerBox">
-        <div class="headerLogo">
-          <h1>
-            <a href="index.html" >DOYUGA</a>
-          </h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info py-0">
+      <div class="container">
+
+        <!-- logo -->
+        <a class="headerLogo" href="index.html">
+          <img height="24" src="./assets/images/DOYOGA-logo@2x.png" alt="logo">
+        </a>
+
+        <!-- 漢堡選單 -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 選單 -->
+        <div class="collapse navbar-collapse justify-content-lg-center" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="headerItem">
+              <a class="nav-link" href="./course.html">課程介紹</a>
+            </li>
+            <li class="headerItem">
+              <a class="nav-link" href="./space.html">瑜珈空間</a>
+            </li>           
+            <li class="nav-item">
+              <a class="nav-link" href="./schedule.html">當月課表</a>
+            </li>
+          </ul>        
         </div>
-        <nav>
-          <ul class="headerMenu d-flex">
-            <li class="headerItem"><a href="course.html" class="headerLink text-gary">課程介紹</a></li>
-            <li class="headerItem"><a href="space.html" class="headerLink text-gary">瑜珈空間</a></li>
-            <li class="headerItem"><a href="schedule.html" class="headerLink text-gary">當月課表</a></li>
-          </ul>
-        </nav>
-          <ul class="d-flex">
-            <li class="headerBtn">
-              <a href="./appointment.html" class="btn btn-outline-primary me-3">立即預約</a>
-            </li>
-            <li class="headerBtn">
-              <a href="./contact.html" class="btn btn-outline-primary">聯絡我們</a>
-            </li>
-          </ul>
+        
+        <!-- 立即預約、聯絡我們 -->
+        <div class="d-lg-block d-none">
+          <div class="d-inline-block py-4">
+            <a href="./appointment.html" class="navbar-btn btn btn-outline-primary py-md-2 px-md-3 me-md-3">立即預約</a>
+            <a href="./contact.html" class="navbar-btn btn btn-outline-primary py-md-2 px-md-3">聯絡我們</a>
+          </div>
+        </div>
+
       </div>
-    </div>
+    </nav>
   </header>
 
   <%- contents %>
-
-  <footer>
+  <footer class="footer bg-primary">
+    <div class="footerBox container">
+      <div class="footerTop d-flex justify-content-between align-items-center">
+        <h3 class="text-white fw-bolder">現在訂閱，獲得課程優惠碼！</h3>
+        <div class="input-group footerSubscribe">
+          <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's username"
+            aria-describedby="button-addon2">
+          <button class="btn btn-secondary text-white" type="button" id="button-addon2">訂閱</button>
+        </div>
+      </div> 
+    </div>
+    <hr class="bg-white mb-md-6 mt-0">   
+    <div class="container pb-md-6 pb-5">
+      <div class="d-flex justify-content-between">
+        <div class="footerBottom">
+          <img class="mb-2 inline-block" src="./assets/images/logo-footer.png" alt="logo">
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#" class="text-white">課程介紹</a></li>
+            <li class="mb-2"><a href="#" class="text-white">瑜珈空間</a></li>
+            <li class="mb-2 mb-md-0"><a href="#" class="text-white">當月課表</a></li>
+            <li class="d-block d-md-none"><p class="text-white">© 2021. All Rights Reserved.</p></li>
+          </ul>
+        </div>       
+        <p class="footer-copyright mb-0 text-white align-self-end d-none d-md-block">© 2021. All Rights Reserved.</p>       
+        <ul class="footerIcon d-flex">
+          <li>
+            <a class="me-2" href="#"><img src="./assets/images/icon-fb.svg" alt="icon" width="24"></a>
+          </li>
+          <li>
+            <a class="me-2" href="#"><img src="./assets/images/icon-ig.svg" alt="icon" width="24"></a>
+          </li>
+          <li>
+            <a href="#"><img src="./assets/images/icon-line.svg" alt="icon" width="24"></a>
+          </li>
+        </ul>
+      </div>      
+    </div>
+  </footer>
+  <!-- <footer>
     <div class="footer bg-primary">
       <div class="footerBox">
         <div class="footerTop d-flex justify-content-between align-items-center">
@@ -91,7 +142,7 @@
         </li>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
   <script src="./assets/js/vendors.js"></script>

@@ -15,6 +15,10 @@
             font: 24px/30px Silom;
             font-weight: bold;
         }
+        img{
+            height: 31px;
+            object-fit: cover;
+        }
         a{
             color: #C0A4A5;
         }
@@ -38,13 +42,19 @@
 .footer{
     position: relative;
     &Box {
-        padding: 0 85px;
+        margin-bottom: 32px;
         h3{
             font-size: $text-2l;
         }
     }
     &Top{
         padding-top: 30px;
+    }
+    &Bottom {
+        img{
+            height: 31px;
+            object-fit: cover;
+        }
     }
     &Subscribe{
         width: 350px;
