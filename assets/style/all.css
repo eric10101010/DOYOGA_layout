@@ -9310,6 +9310,10 @@ table {
     font-size: 24px;
     font: 24px/30px Silom;
     font-weight: bold; }
+  .headerLogo img {
+    height: 31px;
+    -o-object-fit: cover;
+       object-fit: cover; }
   .headerLogo a {
     color: #C0A4A5; }
   .headerItem {
@@ -9327,11 +9331,15 @@ table {
 .footer {
   position: relative; }
   .footerBox {
-    padding: 0 85px; }
+    margin-bottom: 32px; }
     .footerBox h3, .footerBox .h3 {
       font-size: 28px; }
   .footerTop {
     padding-top: 30px; }
+  .footerBottom img {
+    height: 31px;
+    -o-object-fit: cover;
+       object-fit: cover; }
   .footerSubscribe {
     width: 350px; }
   .footerCourse img {
@@ -9400,7 +9408,7 @@ a {
   @media (max-width: 992px) {
     .indexFunction {
       margin-top: 32px;
-      margin-bottom: 47px; } }
+      margin-bottom: 48px; } }
 
 .indexCase {
   margin-top: 40px; }
@@ -9413,6 +9421,9 @@ a {
 
 .indexSpace {
   margin: 64px 0; }
+  @media (max-width: 767px) {
+    .indexSpace {
+      margin: 48px; } }
 
 .indexTeacher {
   padding: 64px 0; }
@@ -9527,6 +9538,16 @@ a {
              object-fit: cover;
           margin-right: 16px; } }
 
+@media (max-width: 767px) {
+  .indexSpaceBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; } }
+
 .indexSpaceImgBox {
   height: 444px;
   display: -webkit-box;
@@ -9538,6 +9559,9 @@ a {
   @media (max-width: 992px) {
     .indexSpaceImgBox {
       height: 266px; } }
+  @media (max-width: 767px) {
+    .indexSpaceImgBox {
+      height: 210px; } }
 
 .indexSpaceImgOne img {
   width: 350px;
@@ -9584,20 +9608,39 @@ a {
            object-fit: cover; } }
 
 .indexSpaceText {
-  width: 445px; }
+  width: 445px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .indexSpaceText h3, .indexSpaceText .h3 {
     font-size: 28px; }
   .indexSpaceText p {
     font-size: 20px; }
+  @media (max-width: 767px) {
+    .indexSpaceText a {
+      margin-bottom: 16px; } }
   @media (max-width: 992px) {
     .indexSpaceText {
       width: 330px; } }
-  @media (max-width: 992px) {
+  @media (max-width: 767px) {
     .indexSpaceText {
-      width: 100%; } }
+      width: 345px; } }
 
 .indexCourse {
   padding: 64px 0; }
+  @media (max-width: 992px) {
+    .indexCourse {
+      padding: 56px 0; } }
+  @media (max-width: 767px) {
+    .indexCourse {
+      padding: 48px 0; } }
   .indexCourseText h3, .indexCourseText .h3 {
     font-size: 28px; }
   .indexCourseText p {
@@ -9612,6 +9655,10 @@ a {
       .indexCourseImg img {
         width: 150px;
         height: 150px; } }
+    @media (max-width: 767px) {
+      .indexCourseImg img {
+        width: 165px;
+        height: 165px; } }
 
 .indexUser {
   background-color: #F5F0E7;
@@ -9633,15 +9680,13 @@ a {
 
 .functionItem {
   width: 350px;
+  margin: 0 auto;
   border-radius: 16px; }
   @media (max-width: 992px) {
     .functionItem {
       width: 210px; } }
   @media (max-width: 767px) {
     .functionItem {
-      width: 345px; } }
-  @media (max-width: 767px) {
-    .functionItemBox {
       width: 345px; } }
 
 .functionCardOne {
@@ -9651,6 +9696,10 @@ a {
   @media (max-width: 992px) {
     .functionCardOne {
       height: 252px; } }
+  @media (max-width: 767px) {
+    .functionCardOne {
+      height: 420px;
+      margin-bottom: 16px; } }
 
 .functionCardTwo {
   background: url(../images/indexCard-2.jpeg) no-repeat 50% 50%;
@@ -9659,6 +9708,10 @@ a {
   @media (max-width: 992px) {
     .functionCardTwo {
       height: 252px; } }
+  @media (max-width: 767px) {
+    .functionCardTwo {
+      height: 420px;
+      margin-bottom: 16px; } }
 
 .functionCardThree {
   background: url(../images/indexCard-3.jpeg) no-repeat 50% 50%;
@@ -9667,6 +9720,9 @@ a {
   @media (max-width: 992px) {
     .functionCardThree {
       height: 252px; } }
+  @media (max-width: 767px) {
+    .functionCardThree {
+      height: 420px; } }
 
 .caseTitle h4, .caseTitle .h4 {
   font-size: 28px; }
@@ -9759,18 +9815,13 @@ a {
           align-items: center;
   padding: 0px 16px;
   padding-top: 16px;
-  padding-bottom: 14px; }
+  padding-bottom: 14px;
+  border-radius: 16px; }
   .userCard img {
     width: 60px;
     height: 60px;
     -o-object-fit: cover;
        object-fit: cover; }
-
-.userItem {
-  width: 350px;
-  border: none;
-  background-color: #ffffff;
-  border-radius: 16px; }
 
 .material-icons-outlined {
   color: #C0A4A5;
