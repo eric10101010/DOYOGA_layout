@@ -9691,6 +9691,12 @@ a {
       border: 1px solid #C0A4A5;
       border-right: none;
       border-radius: 16px 0 0 16px; } }
+  @media (max-width: 767px) {
+    .caseImg {
+      width: 345px;
+      border: 1px solid #C0A4A5;
+      border-bottom: none;
+      border-radius: 16px 16px 0 0; } }
   .caseImg img {
     width: 100%;
     height: 246px;
@@ -9699,7 +9705,11 @@ a {
     border-radius: 16px 16px 0 0; }
     @media (max-width: 992px) {
       .caseImg img {
+        width: 345px;
         border-radius: 16px 0 0 16px; } }
+    @media (max-width: 767px) {
+      .caseImg img {
+        border-radius: 16px 16px 0 0; } }
 
 .caseText {
   border: 1px solid #C0A4A5;
@@ -9710,6 +9720,12 @@ a {
       border: 1px solid #C0A4A5;
       border-left: none;
       border-radius: 0 16px 16px 0; } }
+  @media (max-width: 767px) {
+    .caseText {
+      width: 345px;
+      border: 1px solid #C0A4A5;
+      border-top: none;
+      border-radius: 0 0 16px 16px; } }
   .caseText a {
     font-size: 20px;
     margin-top: 40px;
@@ -9874,6 +9890,20 @@ a {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column; } }
+    .courseMainbarBoxReverse {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; }
+      @media (max-width: 767px) {
+        .courseMainbarBoxReverse {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; } }
   .courseMainbarItem {
     color: #ffffff;
     display: -webkit-box;
@@ -9926,19 +9956,19 @@ a {
       margin-bottom: 30px; } }
 
 .courseMainbarItemOne {
-  background: url(../images/course-1.jpg) no-repeat 50% 70%;
+  background: url(../images/course-1.jpg) no-repeat 50% 50%;
   background-size: cover; }
 
 .courseMainbarItemTwo {
-  background: url(../images/case-1.jpg) no-repeat 50% 70%;
+  background: url(../images/case-1.jpg) no-repeat 50% 50%;
   background-size: cover; }
 
 .courseMainbarItemThree {
-  background: url(../images/course-4.jpg) no-repeat 50% 70%;
+  background: url(../images/course-4.jpg) no-repeat 50% 50%;
   background-size: cover; }
 
 .courseMainbarItemFour {
-  background: url(../images/space-1.jpg) no-repeat 50% 70%;
+  background: url(../images/space-1.jpg) no-repeat 50% 50%;
   background-size: cover; }
 
 .courseMainbarCardOne, .courseMainbarCardTwo, .courseMainbarCardThree, .courseMainbarCardFour {
@@ -9953,19 +9983,19 @@ a {
       width: 345px; } }
 
 .courseMainbarCardOne {
-  background: url(../images/course-2.jpg) no-repeat 50% 70%;
+  background: url(../images/course-2.jpg) no-repeat 50% 50%;
   background-size: cover; }
 
 .courseMainbarCardTwo {
-  background: url(../images/course-3.jpg) no-repeat 50% 70%;
+  background: url(../images/course-3.jpg) no-repeat 50% 100%;
   background-size: cover; }
 
 .courseMainbarCardThree {
-  background: url(../images/course-5.jpg) no-repeat 50% 70%;
+  background: url(../images/course-5.jpg) no-repeat 50% 50%;
   background-size: cover; }
 
 .courseMainbarCardFour {
-  background: url(../images/course-6.jpg) no-repeat 50% 70%;
+  background: url(../images/course-6.jpg) no-repeat 50% 40%;
   background-size: cover; }
 
 .courseTeacher {
@@ -10159,12 +10189,20 @@ a {
   .appointmentProgressItem {
     border-radius: 16px; }
 
+.appointmentCase {
+  margin-top: 32px; }
+
 .appointmentRules {
   margin-top: 32px;
   margin-bottom: 104px; }
   @media (max-width: 992px) {
     .appointmentRules {
-      margin-top: 24px; } }
+      margin-top: 24px;
+      margin-bottom: 80px; } }
+  @media (max-width: 767px) {
+    .appointmentRules {
+      margin-top: 16px;
+      margin-bottom: 88px; } }
   .appointmentRules h2, .appointmentRules .h2 {
     font-size: 28px; }
   .appointmentRulesBox {
@@ -10283,13 +10321,21 @@ a {
   margin-top: 64px;
   margin-bottom: 110px; }
   @media (max-width: 992px) {
-    .contactBox {
-      width: 570px;
-      margin: 0 auto; } }
+    .contact {
+      margin-bottom: 80px; } }
   @media (max-width: 767px) {
-    .contactBox {
-      width: 345px;
-      margin: 0 auto; } }
+    .contact {
+      margin-top: 48px;
+      margin-bottom: 88px; } }
+  .contactBox {
+    width: 1110px;
+    margin: 0 auto; }
+    @media (max-width: 992px) {
+      .contactBox {
+        width: 570px; } }
+    @media (max-width: 767px) {
+      .contactBox {
+        width: 345px; } }
   .contactInfo {
     width: 57%; }
     @media (max-width: 992px) {
@@ -10302,15 +10348,25 @@ a {
     @media (max-width: 992px) {
       .contactForm {
         width: 100%; } }
+    @media (max-width: 767px) {
+      .contactForm {
+        margin-top: 40px; } }
     .contactForm h4, .contactForm .h4 {
       font-size: 20px; }
   .contactMap iframe {
     width: 100%;
     height: 360px;
     border-radius: 16px; }
+    @media (max-width: 767px) {
+      .contactMap iframe {
+        width: 345px;
+        height: 195px; } }
   .contactTitle {
     font-size: 28px;
     margin-bottom: 32px; }
+    @media (max-width: 767px) {
+      .contactTitle {
+        margin-bottom: 24px; } }
   .contactText {
     width: 350px; }
     .contactText h3, .contactText .h3 {
@@ -10324,5 +10380,13 @@ a {
 
 .doneData {
   width: 171px; }
+
+@media (max-width: 992px) {
+  .contactBtn {
+    padding-bottom: 32px; } }
+
+@media (max-width: 767px) {
+  .contactBtn {
+    padding-bottom: 24px; } }
 
 /*# sourceMappingURL=all.css.map */
