@@ -1,14 +1,21 @@
 .contact{
-    margin-top: 64px;
+    margin-top: $text-5xl;
     margin-bottom: 110px;
+    @include pad{
+        margin-bottom: 80px;
+    }
+    @include mobile{
+        margin-top: $text-4xl;
+        margin-bottom: 88px;
+    }
     &Box {
+        width: 1110px;
+        margin: 0 auto;
         @include pad {
             width: 570px;
-            margin: 0 auto;
         }
         @include mobile {
             width: 345px;
-            margin: 0 auto;
         }
     }
     &Info{
@@ -24,6 +31,9 @@
         @include pad {
             width: 100%;
         }
+        @include mobile{
+            margin-top: 40px;
+        }
         h4{
             font-size: $text-m;
         }
@@ -33,16 +43,18 @@
             width: 100%;
             height: 360px;
             border-radius: $text-base;
-            // @include pad {
-            //     width: 570px;
-            //     height: 323px;
-            //     margin: 0 auto;
-            // }
+            @include mobile {
+                width: 345px;
+                height: 195px;
+            }
         }
     }
     &Title{
         font-size: $text-2l;
-        margin-bottom: 32px;
+        margin-bottom: $text-xl;
+        @include mobile {
+            margin-bottom: $text-l;
+        }
     }
     &Text{
         width: 350px;
@@ -59,4 +71,12 @@
 }
 .doneData{
     width: 171px;
+}
+.contactBtn{
+    @include pad{
+        padding-bottom: $text-xl;
+    }
+    @include mobile{
+        padding-bottom: $text-l;
+    }
 }

@@ -10,6 +10,7 @@
                 margin-bottom: $text-l;;
             }
         }
+
         &Box{
             width: 540px;
             margin: 0 auto;
@@ -19,7 +20,7 @@
                 margin-bottom: $text-l;
             }
             p{
-                padding: 0 48px;
+                padding: 0 $text-4xl;
                 @include pad {
                     padding: 0 13px;
                 }
@@ -29,13 +30,21 @@
             border-radius: $text-base;
         }
     }
+    &Case {
+        margin-top: $text-xl;
+    } 
 }
 .appointment{
     &Rules{
-        margin-top: 32px;
+        margin-top: $text-xl;
         margin-bottom: 104px;
         @include pad {
-            margin-top: 24px;
+            margin-top: $text-l;
+            margin-bottom: 80px;
+        }
+        @include mobile{
+            margin-top: $text-base;
+            margin-bottom: 88px;
         }
         h2{
             font-size: $text-2l;
@@ -49,7 +58,7 @@
 .appointmentForm{
     &Question{
         label{
-            margin-right: 16px;
+            margin-right: $text-base;
             @include mobile {
                 margin-right: 12px;
             }
@@ -75,7 +84,7 @@
         }
     }
     &Table{
-        margin-top: 32px;
+        margin-top: $text-xl;
         margin-bottom: 104px;
         @include pad{
             margin-bottom: 80px;
@@ -111,7 +120,7 @@
         h4{
             font-size: $text-m;
             padding-top: 20px;
-            padding-bottom: 32px;
+            padding-bottom: $text-xl;
         }
         &Header{
             display: flex;
