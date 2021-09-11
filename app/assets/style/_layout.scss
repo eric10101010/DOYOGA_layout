@@ -1,4 +1,8 @@
 .header{
+    @include pad{
+        padding-top: 25px;
+        padding-bottom: 24px;
+    }
     background-color:#F5F0E7;
     font-size: $text-base;
     &Box{
@@ -43,12 +47,29 @@
     position: relative;
     &Box {
         margin-bottom: 32px;
-        h3{
-            font-size: $text-2l;
+        @include pad {
+            margin-bottom: 24px;
         }
     }
     &Top{
         padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include pad {
+            padding-top: 24px;
+        }
+        h3{
+            font-size: $text-2l;
+            @include pad {
+                font-size: $text-l;
+                padding-bottom: 8px;
+            }
+        }
+        @include pad {
+            flex-direction: column;
+        }
+
     }
     &Bottom {
         img{
@@ -69,7 +90,4 @@
     &Group{
         padding-bottom: 31px;
     }
-}
-hr{
-    margin: 32px 0;
 }

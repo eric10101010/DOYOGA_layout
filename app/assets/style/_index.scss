@@ -3,6 +3,10 @@
         height: 582px;
         background: url(../images/banner-1.jpeg) no-repeat 0% 100%;
         background-size: cover;
+        @include mobile {
+            background: url(../images/banner-1.jpeg) no-repeat 55% 90%;
+            height: 560px;
+        }
         &Box{
             width: 60%;
             height: 100%;
@@ -21,9 +25,15 @@
             h2{
                 font-size: $text-2xl;
                 font-weight: bold;
+                @include mobile {
+                    font-size: $text-2l;
+                }
             }
             span{
                 font-size: $text-l;
+                @include mobile {
+                    font-size: $text-m;
+                }
             }
         }
         &Btn{
@@ -61,36 +71,40 @@
         @include pad{
             padding: 32px 0;
         }
-        @include pad{
+        @include mobile{
             padding-bottom: 48px;
         }
-        h4{
-            font-size: $text-2xl;
-        }
-        p{
-            font-size: $text-base;
+        &Box {
+            width: 1110px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            @include pad {
+                width: 630px;
+            }
+            @include mobile {
+                width: 345px;
+            }
         }
         &Title{
             margin-top: 30px;
-            h3{
-                @include pad{
+            @include pad {
+                h3{
                     text-align: center;
                 }
+                h4{
+                    width: 450px;
+                    margin: 0 auto;
+                }
             }
-            @include pad{
-               width: 450px;
-               margin: 0 auto;
-            }
-            @include mobile{
-                width: 345px;
-                margin: 0 auto;
-             }
-            h3{
-                font-size: $text-2l;
-            }
-            p{
-                font-size: $text-m;
-            }
+            @include mobile {
+                h4{
+                    width: 345px;
+                    margin: 0 auto;
+                    padding-bottom: 24px;
+                }
+
+            }   
         }
         &Img{
             img{
@@ -100,71 +114,71 @@
                 border-radius: $text-base;
             }
         }
-        &Box {
-            @include pad{
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
+        &Info {
+            position: relative;
+            width: 47%;
+            @include pad {
+                width: 100%;
             }
+            h3{
+                font-size: $text-2l;
+            }
+            h4{
+                font-size: $text-m;
+            }
+            
         }
-        &Item{
-            width: 540px;
-            margin-bottom: 16px;
-            align-items: center;
+        &TextCard{
             padding: 24px 32px;
             border-radius: $text-base;
+            @include pad {
+                width: 90%;
+            }
             @include mobile {
-                padding: 16px;
+                width: 100%;
+                padding: 24px 16px;
             }
             img{
-                margin-right: 20px;
+                width: 68px;
+                height: 68px;
+                object-fit: cover;
                 @include mobile {
                     width: 48px;
                     height: 48px;
-                    object-fit: cover;
-                    margin-right: $text-base;
                 }
             }
-            h4{
-                font-size: $text-m;
-            }
-            @include mobile{
-                width: 345px;
-                margin: 0 auto;
-            }
         }
-        &Top{
-            margin-right: 185px;
-            @include pad{
-                margin-right: 0;
+        &Item {
+            margin-top: 195px;
+            @include pad {
                 display: flex;
-                justify-content: flex-end;
-             }
-             @include mobile{
-                margin-right: 0;
-             }
+                flex-direction: column;
+                align-items: flex-end;
+                // border: 1px solid red;
+            }
         }
-        &TopBox{
+        &ItemTop{
             width: 635px;
+            position: absolute;
+            top: 159px;
+            right: 0px;
             padding: 40px 48px;
             border-radius: $text-base;
-            align-items: center;
-            @include mobile {
-                padding: 16px;
+            @include pad{
+                width: 100%;
+                right: 0px;
             }
-            h4{
-                font-size: $text-m;
+            @include mobile {
+                top: 187px;
+                padding: 16px;
             }
             img{
                 width: 94px;
                 height: 94px;
                 object-fit: cover;
-                margin-right: 20px;
                 @include mobile {
                     width: 48px;
                     height: 48px;
-                    object-fit: cover;
-                    margin-right: 16px;
                 }
             }
         }
@@ -243,7 +257,7 @@
                 width: 330px;
             }
             @include mobile{
-                width: 345px;
+                width: 100%;
             }
         }
     }
