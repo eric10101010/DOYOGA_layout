@@ -60,19 +60,26 @@
             margin-top: $text-xl;
         }
     }
-    &Space{
-        margin: 64px 0;
+
+    &Course{
+        margin-top: 64px;
+        @include pad {
+            margin-top: 56px;
+        }
         @include mobile {
-            margin: $text-4xl;
+            margin-top: 48px;
         }
     }
     &Teacher {
+        margin-bottom: 64px;
         padding: 64px 0;
         @include pad{
             padding: 32px 0;
+            margin-bottom: 56px;
         }
         @include mobile{
             padding-bottom: 48px;
+            margin-bottom: 48px;
         }
         &Box {
             width: 1110px;
@@ -125,6 +132,10 @@
             }
             h4{
                 font-size: $text-m;
+                margin-top: 4px;
+            }
+            h5{
+                font-size: $text-m;
             }
             
         }
@@ -155,6 +166,9 @@
                 flex-direction: column;
                 align-items: flex-end;
                 // border: 1px solid red;
+                @include mobile {
+                    margin-top: 136px;
+                }
             }
         }
         &ItemTop{
@@ -184,8 +198,21 @@
         }
     }
     &Space{
+        width: 1110px;
+        margin: 0 auto;
+
+        @include pad {
+            width: 690px;
+            margin: 0 auto;
+        }
+        @include mobile {
+            width: 345px;
+            margin: 0 auto;
+        }
         &Box{
             @include mobile {
+                // width: 345px;
+                // margin: 0 auto;
                 display: flex;
                 flex-direction: column-reverse;
             }
@@ -307,6 +334,16 @@
     }
 }
 .function{
+    &Box {
+        width: 1110px;
+        margin: 0 auto;
+        @include pad {
+            width: 690px;
+        }
+        @include mobile {
+            width: 345px;
+        }
+    }
     &Title{
         font-size: $text-2xl;
         @include pad{
