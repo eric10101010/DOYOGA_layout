@@ -9293,10 +9293,12 @@ table {
   border-spacing: 0; }
 
 .header {
-  padding-top: 25px;
-  padding-bottom: 24px;
   background-color: #F5F0E7;
   font-size: 16px; }
+  @media (max-width: 992px) {
+    .header {
+      padding-top: 25px;
+      padding-bottom: 24px; } }
   .headerBox {
     margin: 0;
     display: -webkit-box;
@@ -9401,6 +9403,10 @@ a {
   height: 582px;
   background: url(../images/banner-1.jpeg) no-repeat 0% 100%;
   background-size: cover; }
+  @media (max-width: 767px) {
+    .indexBanner {
+      background: url(../images/banner-1.jpeg) no-repeat 55% 90%;
+      height: 560px; } }
   .indexBannerBox {
     width: 60%;
     height: 100%;
@@ -9420,8 +9426,14 @@ a {
   .indexBannerText h2, .indexBannerText .h2 {
     font-size: 36px;
     font-weight: bold; }
+    @media (max-width: 767px) {
+      .indexBannerText h2, .indexBannerText .h2 {
+        font-size: 28px; } }
   .indexBannerText span {
     font-size: 24px; }
+    @media (max-width: 767px) {
+      .indexBannerText span {
+        font-size: 20px; } }
   .indexBannerBtn a {
     font-size: 20px;
     border-radius: 5px; }
@@ -9454,113 +9466,110 @@ a {
   @media (max-width: 992px) {
     .indexTeacher {
       padding: 32px 0; } }
-  @media (max-width: 992px) {
+  @media (max-width: 767px) {
     .indexTeacher {
       padding-bottom: 48px; } }
-  .indexTeacher h4, .indexTeacher .h4 {
-    font-size: 36px; }
-  .indexTeacher p {
-    font-size: 16px; }
+  .indexTeacherBox {
+    width: 1110px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media (max-width: 992px) {
+      .indexTeacherBox {
+        width: 630px; } }
+    @media (max-width: 767px) {
+      .indexTeacherBox {
+        width: 345px; } }
   .indexTeacherTitle {
     margin-top: 30px; }
     @media (max-width: 992px) {
       .indexTeacherTitle h3, .indexTeacherTitle .h3 {
-        text-align: center; } }
-    @media (max-width: 992px) {
-      .indexTeacherTitle {
+        text-align: center; }
+      .indexTeacherTitle h4, .indexTeacherTitle .h4 {
         width: 450px;
         margin: 0 auto; } }
     @media (max-width: 767px) {
-      .indexTeacherTitle {
+      .indexTeacherTitle h4, .indexTeacherTitle .h4 {
         width: 345px;
-        margin: 0 auto; } }
-    .indexTeacherTitle h3, .indexTeacherTitle .h3 {
-      font-size: 28px; }
-    .indexTeacherTitle p {
-      font-size: 20px; }
+        margin: 0 auto;
+        padding-bottom: 24px; } }
   .indexTeacherImg img {
     width: 100%;
     height: 628px;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 16px; }
-  @media (max-width: 992px) {
-    .indexTeacherBox {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end; } }
-  .indexTeacherItem {
-    width: 540px;
-    margin-bottom: 16px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .indexTeacherInfo {
+    position: relative;
+    width: 47%; }
+    @media (max-width: 992px) {
+      .indexTeacherInfo {
+        width: 100%; } }
+    .indexTeacherInfo h3, .indexTeacherInfo .h3 {
+      font-size: 28px; }
+    .indexTeacherInfo h4, .indexTeacherInfo .h4 {
+      font-size: 20px; }
+  .indexTeacherTextCard {
     padding: 24px 32px;
     border-radius: 16px; }
-    @media (max-width: 767px) {
-      .indexTeacherItem {
-        padding: 16px; } }
-    .indexTeacherItem img {
-      margin-right: 20px; }
-      @media (max-width: 767px) {
-        .indexTeacherItem img {
-          width: 48px;
-          height: 48px;
-          -o-object-fit: cover;
-             object-fit: cover;
-          margin-right: 16px; } }
-    .indexTeacherItem h4, .indexTeacherItem .h4 {
-      font-size: 20px; }
-    @media (max-width: 767px) {
-      .indexTeacherItem {
-        width: 345px;
-        margin: 0 auto; } }
-  .indexTeacherTop {
-    margin-right: 185px; }
     @media (max-width: 992px) {
-      .indexTeacherTop {
-        margin-right: 0;
+      .indexTeacherTextCard {
+        width: 90%; } }
+    @media (max-width: 767px) {
+      .indexTeacherTextCard {
+        width: 100%;
+        padding: 24px 16px; } }
+    .indexTeacherTextCard img {
+      width: 68px;
+      height: 68px;
+      -o-object-fit: cover;
+         object-fit: cover; }
+      @media (max-width: 767px) {
+        .indexTeacherTextCard img {
+          width: 48px;
+          height: 48px; } }
+  .indexTeacherItem {
+    margin-top: 195px; }
+    @media (max-width: 992px) {
+      .indexTeacherItem {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end; } }
-    @media (max-width: 767px) {
-      .indexTeacherTop {
-        margin-right: 0; } }
-  .indexTeacherTopBox {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end; } }
+  .indexTeacherItemTop {
     width: 635px;
+    position: absolute;
+    top: 159px;
+    right: 0px;
     padding: 40px 48px;
-    border-radius: 16px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    border-radius: 16px; }
+    @media (max-width: 992px) {
+      .indexTeacherItemTop {
+        width: 100%;
+        right: 0px; } }
     @media (max-width: 767px) {
-      .indexTeacherTopBox {
+      .indexTeacherItemTop {
+        top: 187px;
         padding: 16px; } }
-    .indexTeacherTopBox h4, .indexTeacherTopBox .h4 {
-      font-size: 20px; }
-    .indexTeacherTopBox img {
+    .indexTeacherItemTop img {
       width: 94px;
       height: 94px;
       -o-object-fit: cover;
-         object-fit: cover;
-      margin-right: 20px; }
+         object-fit: cover; }
       @media (max-width: 767px) {
-        .indexTeacherTopBox img {
+        .indexTeacherItemTop img {
           width: 48px;
-          height: 48px;
-          -o-object-fit: cover;
-             object-fit: cover;
-          margin-right: 16px; } }
+          height: 48px; } }
 
 @media (max-width: 767px) {
   .indexSpaceBox {
@@ -9655,7 +9664,7 @@ a {
       width: 330px; } }
   @media (max-width: 767px) {
     .indexSpaceText {
-      width: 345px; } }
+      width: 100%; } }
 
 .indexCourse {
   padding: 64px 0; }
