@@ -82,7 +82,7 @@
             margin-bottom: 48px;
         }
         &Box {
-            width: 1110px;
+            // width: 1110px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -198,8 +198,8 @@
         }
     }
     &Space{
-        width: 1110px;
-        margin: 0 auto;
+        // width: 1110px;
+        // margin: 0 auto;
 
         @include pad {
             width: 690px;
@@ -207,7 +207,6 @@
         }
         @include mobile {
             width: 345px;
-            margin: 0 auto;
         }
         &Box{
             @include mobile {
@@ -356,7 +355,7 @@
         }
     }
     &Item{
-        width: 350px;
+        // width: 350px;
         margin: 0 auto;
         border-radius: $text-base;
         @include pad {
