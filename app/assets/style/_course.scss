@@ -79,15 +79,14 @@
     }
 }
 .courseMainbar{
-    // width: 1110px;
-    // margin: 0 auto;
+    width: 1110px;
+    margin: 0 auto;
     margin-top: 54px;
     margin-bottom: 34px;
     display: flex;
     justify-content: space-between;
     @include pad{
         width: 690px;
-        margin: 0 auto;
         margin-top: 46px;
     }
     @include mobile{
@@ -125,6 +124,7 @@
         padding: 24px;
         border-radius: 16px;
         position: relative;
+        cursor: pointer;
         h4{
             font-size: $text-2l;
             font-weight: bold;
@@ -240,4 +240,36 @@
         }
     }
 }
-  
+.modal-img{
+    padding: 20px 20px;
+    @include pad {
+        padding: 0px;
+    }
+    
+    img {
+        width: 100%;
+        height: 418px;
+        object-fit: cover;
+        border-radius: $text-base;
+
+    }
+}
+.modal-content{
+    border-radius: $text-base;
+    padding: 64px 0;
+    @include mobile {
+        padding: 32px 16px;
+    }
+}
+.modal-text {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include pad {
+        padding-left: 20px;
+    }
+    h3{
+        font-size: $text-2l;
+    }
+}
