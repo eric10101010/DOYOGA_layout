@@ -79,18 +79,18 @@
     }
 }
 .courseMainbar{
-    width: 1110px;
-    margin: 0 auto;
+    // width: 1110px;
+    // margin: 0 auto;
     margin-top: 54px;
     margin-bottom: 34px;
     display: flex;
     justify-content: space-between;
     @include pad{
-        width: 690px;
+        // width: 690px;
         margin-top: 46px;
     }
     @include mobile{
-        width: 345px;
+        // width: 345px;
         margin-bottom: $text-4xl;
     }
     &Img{
@@ -245,7 +245,7 @@
     @include pad {
         padding: 0px;
     }
-    
+
     img {
         width: 100%;
         height: 418px;
