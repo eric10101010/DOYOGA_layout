@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css" />
   <link rel="stylesheet" href="./assets/style/all.css">
-  
 </head>
-
 <body>
   <ul class="sns d-none d-lg-block me-4 position-fixed top-50 end-0 translate-middle-y text-center lh-sm">
     <li><a href="#" class="d-block fs-1"><i class="fab fa-facebook"></i></a></li>
@@ -24,42 +21,39 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-info py-0">
       <div class="header container">
         <!-- logo -->
-        <a class="headerLogo" href="index.html">
-          <img height="24" src="./assets/images/DOYOGA-logo@2x.png" alt="logo">
-        </a>
-
+        <h1>
+          <a class="headerLogo" href="index.html">
+            DOYOGA
+          </a>
+        </h1>
         <!-- 漢堡選單 -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <!-- 選單 -->
-        <div class="collapse navbar-collapse justify-content-lg-center" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
           <ul class="navbar-nav">
-            <li class="nav-item me-md-6">
-              <a class="nav-link text-gary fw-bolder" href="./course.html">課程介紹</a>
+            <li class="mainBtn nav-item me-md-6">
+              <a class="nav-link btn text-gary fw-bolder" href="./course.html">課程介紹</a>
             </li>
-            <li class="nav-item me-md-6">
-              <a class="nav-link text-gary fw-bolder" href="./space.html">瑜珈空間</a>
+            <li class="mainBtn nav-item me-md-6">
+              <a class="nav-link btn text-gary fw-bolder" href="./space.html">瑜珈空間</a>
             </li>           
-            <li class="nav-item">
-              <a class="nav-link text-gary fw-bolder" href="./schedule.html">當月課表</a>
+            <li class="mainBtn nav-item">
+              <a class="nav-link btn text-gary fw-bolder" href="./schedule.html">當月課表</a>
             </li>
           </ul>        
         </div>
-        
         <!-- 立即預約、聯絡我們 -->
         <div class="d-lg-block d-none" >
-          <div class="d-inline-block py-4">
+          <div class="sideBtn d-inline-block py-4">
             <a href="./appointment.html" class="navbar-btn btn btn-outline-primary py-md-2 px-md-3 me-md-3">立即預約</a>
             <a href="./contact.html" class="navbar-btn btn btn-outline-primary py-md-2 px-md-3">聯絡我們</a>
           </div>
         </div>
-
       </div>
     </nav>
   </header>
-
   <main>
   <section class="space">
     <div class="container">
@@ -67,52 +61,50 @@
             <h2 class="text-center text-primary">瑜珈空間</h2>
             <div class="spaceMainbar col-12 col-md-8">
                 <ul class="spaceMainbarBox row">
-                    <li class="col-md-12 mb-lg-4 mb-md-4 mb-3">
-                      <div class="spaceMainbarItem position-relative">
-                        <img
-                          src="https://images.unsplash.com/photo-1616940779493-6958fbd615fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
-                          alt="A、B 團體課教室" class="img magic-height-350 magic-height-md-216 magic-height-lg-350 rounded-4">
-                        <div class="spaceMainbarText text-white p-lg-4 p-md-4 p-lg-6  position-absolute bottom-0 start-50 translate-middle-x w-100">
-                          <h3>A、B 團體課教室</h3>
-                          <p>教授課程：A-基礎、艾揚格、哈達、寰宇；B-雙人飛行、阿斯坦加、陰陽、香氛</p>
+                    <li class="spaceMainbarItem col-md-12 mb-lg-4 mb-md-4 mb-3">
+                        <div class="card border-0 text-white ">
+                            <img src="https://images.unsplash.com/photo-1616940779493-6958fbd615fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80" class="card-img" alt="整體健身">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                <h3>A、B 團體課教室</h3>
+                                <p>教授課程：A-基礎、艾揚格、哈達、寰宇；B-雙人飛行、阿斯坦加、陰陽、香氛</p>
+                            </div>
                         </div>
-                      </div>
                     </li>
-                    <li class="col-md-6 mb-lg-4 mb-md-4 mb-3">
-                      <div class="spaceMainbarItem position-relative">
-                        <img src="assets/images/space-1.jpg" alt="space-photo">
-                        <div class="spaceMainbarText text-white position-absolute bottom-0 start-50 translate-middle-x w-100">
-                          <h3>C、D 個人訓練室</h3>
-                          <p>開放時間：每週一至週五 09:00~17:00</p>
+                    <li class="spaceMainbarItem col-md-6 mb-lg-4 mb-md-4 mb-3">
+                        <div class="card border-0 text-white ">
+                            <img src="assets/images/space-1.jpg" class="card-img" alt="space-photo">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                <h3>C、D 個人訓練室</h3>
+                                <p>開放時間：每週一至週五 09:00~17:00</p>
+                            </div>
                         </div>
-                      </div>
                     </li>
-                    <li class="col-md-6 mb-lg-4 mb-md-4 mb-3">
-                      <div class="spaceMainbarItem position-relative">
-                        <img src="assets/images/space-4.jpg" alt="space-photo">
-                        <div class="spaceMainbarText text-white position-absolute bottom-0 start-50 translate-middle-x w-100">
-                          <h3>淋浴間</h3>
-                          <p>開放時間：每週一至週日 09:00~21:30</p>
+                    <li class="spaceMainbarItem col-md-6 mb-lg-4 mb-md-4 mb-3">
+                        <div class="card border-0 text-white ">
+                            <img src="assets/images/space-4.jpg" class="card-img" alt="space-photo">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                <h3>淋浴間</h3>
+                                <p>開放時間：每週一至週日 09:00~21:30</p>
+                            </div>
                         </div>
-                      </div>
                     </li>
-                    <li class="col-md-6 mb-lg-4 mb-md-4 mb-3">
-                      <div class="spaceMainbarItem position-relative">
-                        <img src="assets/images/space-3.jpg" alt="space-photo">
-                        <div class="spaceMainbarText text-white position-absolute bottom-0 start-50 translate-middle-x w-100">
-                          <h3>器材出租</h3>
-                          <p>有租借需求請至櫃檯登記</p>
+                    <li class="spaceMainbarItem col-md-6 mb-lg-4 mb-md-4 mb-3">
+                        <div class="card border-0 text-white ">
+                            <img src="assets/images/space-3.jpg" class="card-img" alt="space-photo">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                <h3>器材出租</h3>
+                                <p>有租借需求請至櫃檯登記</p>
+                            </div>
                         </div>
-                      </div>
                     </li>
-                    <li class="col-md-6 mb-4">
-                      <div class="spaceMainbarItem position-relative">
-                        <img src="assets/images/space-5.jpg" alt="space-photo">
-                        <div class="spaceMainbarText text-white pb position-absolute bottom-0 start-50 translate-middle-x w-100">
-                          <h3>交誼廳</h3>
-                          <p>開放時間：每週一至週五 09:00~21:30</p>
+                    <li class="spaceMainbarItem col-md-6 mb-4">
+                        <div class="card border-0 text-white ">
+                            <img src="assets/images/space-5.jpg" class="card-img" alt="space-photo">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                <h3>交誼廳</h3>
+                                <p>開放時間：每週一至週五 09:00~21:30</p>
+                            </div>
                         </div>
-                      </div>
                     </li>
                   </ul>
             </div>
@@ -135,7 +127,7 @@
   <section class="spaceRecommend bg-info">
     <div class="container">
         <h2 class="text-center text-primary">課程推薦</h2>
-        <div class="swiper-container surroundingsSwiper">
+        <div class="swiper-container recommandSwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="spaceRecommendItem">
@@ -243,89 +235,47 @@
       <div class="footerTop">
         <h3 class="text-white fw-bolder">現在訂閱，獲得課程優惠碼！</h3>
         <div class="input-group footerSubscribe">
-          <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's username"
-            aria-describedby="button-addon2">
-          <button class="btn btn-secondary text-white" type="button" id="button-addon2">訂閱</button>
+          <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Userrmail" aria-describedby="basic-addon1">
+            <button class="btn btn-secondary text-white" type="button">訂閱</button>
+          </div>
         </div>
       </div> 
     </div>
     <hr class="bg-white mb-lg-5 mb-md-4 mt-0">   
     <div class="container pb-md-6 pb-5">
-      <div class="d-flex justify-content-between">
-        <div class="footerBottom">
-          <img class="mb-2 inline-block" src="./assets/images/logo-footer.png" alt="logo">
-          <ul class="list-unstyled mb-0">
-            <li class="mb-2"><a href="#" class="text-white">課程介紹</a></li>
-            <li class="mb-2"><a href="#" class="text-white">瑜珈空間</a></li>
-            <li class="mb-2 mb-md-0"><a href="#" class="text-white">當月課表</a></li>
-            <li class="d-block d-md-none"><p class="text-white">© 2021. All Rights Reserved.</p></li>
+      <div class="row">
+        <div class="d-flex">
+          <a href="#" class="mb-2"><img src="./assets/images/logo-footer.png" alt="logo" width="50%"></a>
+          <ul class="nav ms-auto">
+            <li class="nav-item">
+              <a href="" class="nav-link px-2"><img src="./assets/images/icon-fb.svg" alt="icon" width="24px"></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2"><img src="./assets/images/icon-ig.svg" alt="icon" width="24px"></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2"><img src="./assets/images/icon-line.svg" alt="icon" width="24px"></a>
+            </li>
           </ul>
-        </div>       
-        <p class="footer-copyright mb-0 text-white align-self-end d-none d-md-block">© 2021. All Rights Reserved.</p>       
-        <ul class="footerIcon d-flex">
-          <li>
-            <a class="me-2" href="#"><img src="./assets/images/icon-fb.svg" alt="icon" width="24"></a>
-          </li>
-          <li>
-            <a class="me-2" href="#"><img src="./assets/images/icon-ig.svg" alt="icon" width="24"></a>
-          </li>
-          <li>
-            <a href="#"><img src="./assets/images/icon-line.svg" alt="icon" width="24"></a>
-          </li>
-        </ul>
-      </div>      
+        </div>
+        <div class="col-12 col-sm-4">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a href="./course.html" class="nav-link ps-0 text-white">課程介紹</a></li>
+            <li class="nav-item"><a href="./space.html" class="nav-link ps-0 text-white">瑜珈空間</a></li>
+            <li class="nav-item"><a href="./schedule.html" class="nav-link ps-0 text-white">當月課表</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 d-flex align-items-sm-end justify-content-md-center">
+          <small class="text-white">© 2021. All Rights Reserved.</small>
+        </div>
+      </div>
+     
     </div>
   </footer>
-  <!-- <footer>
-    <div class="footer bg-primary">
-      <div class="footerBox">
-        <div class="footerTop d-flex justify-content-between align-items-center">
-          <h3 class="text-white fw-bolder">現在訂閱，獲得課程優惠碼！</h3>
-          <div class="input-group footerSubscribe">
-            <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's username"
-              aria-describedby="button-addon2">
-            <button class="btn btn-secondary text-white" type="button" id="button-addon2">訂閱</button>
-          </div>
-        </div>
-        <hr class="text-white">
-        <div class="footerBottom d-flex justify-content-between">
-          <ul class="footerCourse">
-            <li>
-              <img src="./assets/images/logo-footer.png" alt="">
-            </li>
-            <li class="my-2">
-              <a class="text-white" href="./course.html">課程介紹</a>
-            </li>
-            <li class="mb-2">
-              <a class="text-white" href="./space.html">瑜珈空間</a>
-            </li>
-          </ul>
-          <ul class="footerIcon d-flex">
-            <li>
-              <a class="me-2" href="#"><img src="./assets/images/icon-fb.svg" alt="icon" width="24"></a>
-            </li>
-            <li>
-              <a class="me-2" href="#"><img src="./assets/images/icon-ig.svg" alt="icon" width="24"></a>
-            </li>
-            <li>
-              <a href="#"><img src="./assets/images/icon-line.svg" alt="icon" width="24"></a>
-            </li>
-          </ul>
-        </div>
-        <li class="footerGroup d-flex justify-content-between">
-          <a class="text-white" href="./schedule.html">當月課表</a>
-          <p class="footerRight text-white">© 2021. All Rights Reserved.</p>
-          <span></span>
-        </li>
-      </div>
-    </div>
-  </footer> -->
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
   <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
-
 </html>

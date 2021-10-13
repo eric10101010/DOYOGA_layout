@@ -81,6 +81,22 @@ var teacherSwiper = new Swiper(".teacherSwiper", {
     }
   }
 });
+var recommandSwiper = new Swiper(".recommandSwiper", {
+  slidesPerColumnFill: 'row',
+  slidesPerView: 1.5,
+  slidesPerColumn: 1,
+  spaceBetween: 30,
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      slidesPerColumn: 1
+    },
+    1200: {
+      slidesPerView: 4.5,
+      slidesPerColumn: 1
+    }
+  }
+});
 var levelSwiper = new Swiper(".course-level", {
   slidesPerColumnFill: 'row',
   slidesPerView: 1,
